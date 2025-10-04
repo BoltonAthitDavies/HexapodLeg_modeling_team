@@ -1,0 +1,6 @@
+/home/ambushee/HexapodLeg_modeling_team/hexapod/build/cybergear_interfaces/rosidl_adapter/cybergear_interfaces:msg/MotorControl.idl
+/home/ambushee/HexapodLeg_modeling_team/hexapod/build/cybergear_interfaces/rosidl_adapter/cybergear_interfaces:msg/MotorControlGroup.idl
+/home/ambushee/HexapodLeg_modeling_team/hexapod/build/cybergear_interfaces/rosidl_adapter/cybergear_interfaces:msg/SetPoint.idl
+/home/ambushee/HexapodLeg_modeling_team/hexapod/build/cybergear_interfaces/rosidl_adapter/cybergear_interfaces:srv/SetParam.idl
+/home/ambushee/HexapodLeg_modeling_team/hexapod/build/cybergear_interfaces/rosidl_adapter/cybergear_interfaces:srv/SetMotionGain.idl
+/home/ambushee/HexapodLeg_modeling_team/hexapod/build/cybergear_interfaces/rosidl_adapter/cybergear_interfaces:srv/VoltaOperationCommand.idl

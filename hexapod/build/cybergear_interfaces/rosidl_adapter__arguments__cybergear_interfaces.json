@@ -1,0 +1,11 @@
+{
+  "package_name": "cybergear_interfaces",
+  "non_idl_tuples": [
+    "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/cybergear/cybergear_interfaces:msg/MotorControl.msg",
+    "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/cybergear/cybergear_interfaces:msg/MotorControlGroup.msg",
+    "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/cybergear/cybergear_interfaces:msg/SetPoint.msg",
+    "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/cybergear/cybergear_interfaces:srv/SetParam.srv",
+    "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/cybergear/cybergear_interfaces:srv/SetMotionGain.srv",
+    "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/cybergear/cybergear_interfaces:srv/VoltaOperationCommand.srv"
+  ]
+}

@@ -1,0 +1,4 @@
+source;share/cybergear_interfaces/local_setup.bash
+source;share/cybergear_interfaces/local_setup.dsv
+source;share/cybergear_interfaces/local_setup.sh
+source;share/cybergear_interfaces/local_setup.zsh

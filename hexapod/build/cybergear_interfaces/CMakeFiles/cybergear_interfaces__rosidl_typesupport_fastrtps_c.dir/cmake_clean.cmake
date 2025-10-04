@@ -1,0 +1,33 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/motor_control__type_support_c.cpp.o"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/motor_control__type_support_c.cpp.o.d"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/motor_control_group__type_support_c.cpp.o"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/motor_control_group__type_support_c.cpp.o.d"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/set_point__type_support_c.cpp.o"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/set_point__type_support_c.cpp.o.d"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/set_motion_gain__type_support_c.cpp.o"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/set_motion_gain__type_support_c.cpp.o.d"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/set_param__type_support_c.cpp.o"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/set_param__type_support_c.cpp.o.d"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/volta_operation_command__type_support_c.cpp.o"
+  "CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/volta_operation_command__type_support_c.cpp.o.d"
+  "libcybergear_interfaces__rosidl_typesupport_fastrtps_c.pdb"
+  "libcybergear_interfaces__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/motor_control__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/motor_control__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/motor_control_group__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/motor_control_group__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/set_point__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/msg/detail/set_point__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/set_motion_gain__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/set_motion_gain__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/set_param__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/set_param__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/volta_operation_command__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/cybergear_interfaces/srv/detail/volta_operation_command__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/cybergear_interfaces__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

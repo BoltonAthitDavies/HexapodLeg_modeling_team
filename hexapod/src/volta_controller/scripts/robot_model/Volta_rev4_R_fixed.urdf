@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Volta_rev4_assembly_R_fixed.SLDASM">
+  <link name="R_foot_contact" />
+  <joint name="R_foot_contact_offset" type="fixed">
+    <parent link="R_foot_contact" />
+    <child link="R_foot" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+  <link name="R_foot">
+    <inertial>
+      <origin xyz="0.062345 -8.6492E-08 -0.086269" rpy="0 0 0" />
+      <mass value="0.17" />
+      <inertia ixx="0.0013771" ixy="1.9416E-10" ixz="0.00014937" iyy="0.0013531" iyz="-2.8125E-09" izz="0.00036097" />
+    </inertial>
+  </link>
+  <link name="R_ankle">
+    <inertial>
+      <origin xyz="-1.5544E-05 0.0071279 -0.048447" rpy="0 0 0" />
+      <mass value="0.387" />
+      <inertia ixx="0.0002623" ixy="-8.4101E-08" ixz="2.5171E-07" iyy="0.00027612" iyz="5.6957E-06" izz="0.00012887" />
+    </inertial>
+  </link>
+  <joint name="JR_ankle_r" type="continuous">
+    <origin xyz="-0.094 0 0.08001" rpy="3.1416 1.5708 0" />
+    <parent link="R_foot" />
+    <child link="R_ankle" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="R_leg">
+    <inertial>
+      <origin xyz="-6.3227E-06 -0.066956 -0.018284" rpy="0 0 0" />
+      <mass value="0.399" />
+      <inertia ixx="0.0011048" ixy="-2.4437E-09" ixz="4.6909E-09" iyy="0.00011939" iyz="7.7938E-07" izz="0.0012018" />
+    </inertial>
+  </link>
+  <joint name="JR_ankle_p" type="continuous">
+    <origin xyz="0 0 -0.094" rpy="-1.5708 -1.5708 0" />
+    <parent link="R_ankle" />
+    <child link="R_leg" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="R_thigh">
+    <inertial>
+      <origin xyz="-0.06517 2.6122E-05 -0.0057129" rpy="0 0 0" />
+      <mass value="0.434" />
+      <inertia ixx="0.00013331" ixy="-4.7736E-06" ixz="5.895E-05" iyy="0.0009106" iyz="1.0872E-07" izz="0.00099215" />
+    </inertial>
+  </link>
+  <joint name="JR_knee" type="continuous">
+    <origin xyz="0 -0.2 0" rpy="3.1416 0 1.5708" />
+    <parent link="R_leg" />
+    <child link="R_thigh" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="R_hip">
+    <inertial>
+      <origin xyz="-0.0062251 1.0364E-05 -0.039469" rpy="0 0 0" />
+      <mass value="0.365" />
+      <inertia ixx="0.00018391" ixy="5.5353E-09" ixz="-1.9227E-05" iyy="0.00017953" iyz="-8.2548E-09" izz="0.00013738" />
+    </inertial>
+  </link>
+  <joint name="JR_hip_y" type="continuous">
+    <origin xyz="-0.17 0 0" rpy="1.5708 0 1.5708" />
+    <parent link="R_thigh" />
+    <child link="R_hip" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="R_hip_connector">
+    <inertial>
+      <origin xyz="0.00010202 0.0054073 -0.0083428" rpy="0 0 0" />
+      <mass value="0.36" />
+      <inertia ixx="0.00011402" ixy="6.3402E-07" ixz="-3.2815E-09" iyy="7.825E-05" iyz="-1.2938E-05" izz="0.0001669" />
+    </inertial>
+  </link>
+  <joint name="JR_hip_r" type="continuous">
+    <origin xyz="0 0 -0.124" rpy="3.1416 -1.5708 -3.1416" />
+    <parent link="R_hip" />
+    <child link="R_hip_connector" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="torso">
+    <inertial>
+      <origin xyz="-0.024021 0.0001557 -0.067" rpy="0 0 0" />
+      <mass value="1.48"/>
+      <!-- <mass value="5.0" /> -->
+      <inertia ixx="0.0025688" ixy="5.7023E-06" ixz="-6.0301E-09" iyy="0.0028215" iyz="7.1828E-09" izz="0.0015625" />
+    </inertial>
+  </link>
+  <joint name="JR_hip_p" type="continuous">
+    <origin xyz="0 0.058 0" rpy="1.5708 0 0" />
+    <parent link="R_hip_connector" />
+    <child link="torso" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="L_hip_connector">
+    <inertial>
+      <origin xyz="0.00010593 0.0079546 0.052571" rpy="0 0 0" />
+      <mass value="0.36" />
+      <inertia ixx="0.00011402" ixy="4.9119E-09" ixz="-6.2942E-07" iyy="0.0001669" iyz="-1.2947E-05" izz="7.8252E-05" />
+    </inertial>
+  </link>
+  <joint name="JL_hip_P" type="continuous">
+    <origin xyz="0 0 -0.134" rpy="3.1416 0 0" />
+    <parent link="torso" />
+    <child link="L_hip_connector" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="L_hip">
+    <inertial>
+      <origin xyz="0.084531 1.0364E-05 0.0052271" rpy="0 0 0" />
+      <mass value="0.365" />
+      <inertia ixx="0.00013738" ixy="-8.2548E-09" ixz="1.9227E-05" iyy="0.00017953" iyz="-5.5353E-09" izz="0.00018391" />
+    </inertial>
+  </link>
+  <joint name="JL_hip_r" type="continuous">
+    <origin xyz="0 0 0.058" rpy="1.5708 0 0" />
+    <parent link="L_hip_connector" />
+    <child link="L_hip" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="L_thigh">
+    <inertial>
+      <origin xyz="2.613E-05 0.0057128 0.10482" rpy="0 0 0" />
+      <mass value="0.434" />
+      <inertia ixx="0.0009106" ixy="-1.0875E-07" ixz="-4.769E-06" iyy="0.00099215" iyz="-5.8959E-05" izz="0.00013331" />
+    </inertial>
+  </link>
+  <joint name="JL_hip_y" type="continuous">
+    <origin xyz="0.124 0 0" rpy="0 1.5708 0" />
+    <parent link="L_hip" />
+    <child link="L_thigh" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="L_leg">
+    <inertial>
+      <origin xyz="0.13304 -6.3227E-06 0.012284" rpy="0 0 0" />
+      <mass value="0.399" />
+      <inertia ixx="0.00011939" ixy="-2.4437E-09" ixz="-7.7938E-07" iyy="0.0011048" iyz="-4.6909E-09" izz="0.0012018" />
+    </inertial>
+  </link>
+  <joint name="JL_knee" type="continuous">
+    <origin xyz="0 0 0.17" rpy="1.5708 -1.5708 0" />
+    <parent link="L_thigh" />
+    <child link="L_leg" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="L_ankle">
+    <inertial>
+      <origin xyz="0.045553 -1.5544E-05 0.0011279" rpy="0 0 0" />
+      <mass value="0.387" />
+      <inertia ixx="0.00012887" ixy="2.5171E-07" ixz="5.6957E-06" iyy="0.0002623" iyz="-8.4101E-08" izz="0.00027612" />
+    </inertial>
+  </link>
+  <joint name="JL_ankle_p" type="continuous">
+    <origin xyz="0.2 0 0" rpy="-3.1416 0 -1.5657" />
+    <parent link="L_leg" />
+    <child link="L_ankle" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.5" />
+  </joint>
+  <link name="L_foot">
+    <inertial>
+      <origin xyz="0.062345 -8.7268E-08 -0.086269" rpy="0 0 0" />
+      <mass value="0.17" />
+      <inertia ixx="0.0013771" ixy="1.9265E-10" ixz="0.00014937" iyy="0.0013531" iyz="-2.8031E-09" izz="0.00036097" />
+    </inertial>
+  </link>
+  <joint name="JL_ankle_r" type="continuous">
+    <origin xyz="0.094 0 0" rpy="-1.5708 0 -1.5708" />
+    <parent link="L_ankle" />
+    <child link="L_foot" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="0.5" />
+  </joint>
+
+  <transmission name="trans_JR_ankle_r" type="SimpleTransmission">
+    <actuator name="JR_ankle_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JR_ankle_r" />
+  </transmission>
+  <transmission name="trans_JR_ankle_p" type="SimpleTransmission">
+    <actuator name="JR_ankle_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JR_ankle_p" />
+  </transmission>
+  <transmission name="trans_JR_knee" type="SimpleTransmission">
+    <actuator name="JR_knee_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JR_knee" />
+  </transmission>
+  <transmission name="trans_JR_hip_y" type="SimpleTransmission">
+    <actuator name="JR_hip_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JR_hip_y" />
+  </transmission>
+  <transmission name="trans_JR_hip_r" type="SimpleTransmission">
+    <actuator name="JR_hip_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JR_hip_r" />
+  </transmission>
+  <transmission name="trans_JR_hip_p" type="SimpleTransmission">
+    <actuator name="JR_hip_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JR_hip_p" />
+  </transmission>
+  <transmission name="trans_JL_hip_P" type="SimpleTransmission">
+    <actuator name="JL_hip_P_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JL_hip_P" />
+  </transmission>
+  <transmission name="trans_JL_hip_r" type="SimpleTransmission">
+    <actuator name="JL_hip_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JL_hip_r" />
+  </transmission>
+  <transmission name="trans_JL_hip_y" type="SimpleTransmission">
+    <actuator name="JL_hip_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JL_hip_y" />
+  </transmission>
+  <transmission name="trans_JL_knee" type="SimpleTransmission">
+    <actuator name="JL_knee_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JL_knee" />
+  </transmission>
+  <transmission name="trans_JL_ankle_p" type="SimpleTransmission">
+    <actuator name="JL_ankle_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JL_ankle_p" />
+  </transmission>
+  <transmission name="trans_JL_ankle_r" type="SimpleTransmission">
+    <actuator name="JL_ankle_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+    <joint name="JL_ankle_r" />
+  </transmission>
+</robot>

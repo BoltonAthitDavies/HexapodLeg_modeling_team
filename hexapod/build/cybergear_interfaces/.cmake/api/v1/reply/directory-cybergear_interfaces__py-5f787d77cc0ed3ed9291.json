@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "cybergear_interfaces__py",
+		"source" : "/home/ambushee/HexapodLeg_modeling_team/hexapod/build/cybergear_interfaces/cybergear_interfaces__py"
+	}
+}
