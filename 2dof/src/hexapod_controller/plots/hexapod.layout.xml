@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plotjuggler>
-  <topics>
-    <topic name="/joint_states/position" type="vector" />
-    <topic name="/joint_states/velocity" type="vector" />
-    <topic name="/joint_position_controller/commands" type="vector" />
-  </topics>
-</plotjuggler>

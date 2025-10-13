@@ -1,0 +1,131 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    HEXAPOD ROBOT ON STATIC BASE                              ║
+║                         Height = 1.0 meter                                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+                         Side View
+                         ─────────
+                              
+    z = 1.1m  →     ╔═══════════════╗
+                    ║               ║
+                    ║     ROBOT     ║  ← Your 2-DOF RR Robot
+                    ║   (base_link) ║     Spawn Position
+                    ║               ║
+                    ╚═══════════════╝
+                    ─ ─ ─ ─ ─ ─ ─ ─ ─  ← Clearance (0.1m)
+    
+    z = 1.0m  →     ┌───────────────────────┐  ← Platform Top Surface
+                    │                       │
+                    │                       │
+                    │   STATIC PLATFORM     │
+                    │   (Blue-gray box)     │  ← Height = 1.0m
+                    │   1.0m × 1.0m × 1.0m  │     Width = 1.0m
+                    │                       │     Depth = 1.0m
+                    │                       │
+    z = 0.0m  →     └───────────────────────┘  ← Platform Base / Ground Level
+    
+    ═══════════════════════════════════════════  ← Ground Plane (infinite)
+
+
+
+
+                         Top View
+                         ────────
+
+                         ┌─ ─ ─ ┐
+                         │       │  Robot footprint
+                         └─ ─ ─ ┘
+                              
+                ┌───────────────────────┐
+                │                       │
+                │                       │
+                │    STATIC PLATFORM    │
+                │      1.0m × 1.0m      │
+                │                       │
+                │         (0,0)         │  ← Center position
+                │                       │
+                └───────────────────────┘
+                              
+                              
+                              
+
+
+                    3D Perspective View
+                    ───────────────────
+
+                              ╱│
+                            ╱  │  Robot
+                          ╱════│
+                        ╱      │
+              ┌────────────────────────┐
+             ╱│                       ╱│
+            ╱ │    STATIC BASE       ╱ │
+           ╱  │    Platform         ╱  │
+          ╱   │    Height = 1.0m   ╱   │
+         ╱    │                   ╱    │
+        ╱─────┼──────────────────╱─────┤
+       │      │                 │      │
+       │      │                 │      │
+       │      └─────────────────┼──────┘
+       │     ╱                  │     ╱
+       │    ╱                   │    ╱
+       │   ╱                    │   ╱
+       │  ╱                     │  ╱
+       └─────────────────────────┘╱
+        ╲                         ╱
+         ╲                       ╱
+          ╲═════════════════════╱  Ground
+
+
+
+
+┌─ COORDINATE SYSTEM ──────────────────────────────────────────────────────────┐
+│                                                                              │
+│  Platform Center:  (x=0, y=0, z=0.5)                                         │
+│  Platform Base:    (x=0, y=0, z=0.0)                                         │
+│  Platform Top:     (x=0, y=0, z=1.0)                                         │
+│  Robot Base:       (x=0, y=0, z=1.1)                                         │
+│                                                                              │
+│  Platform Dimensions:                                                        │
+│    - Width (X):  1.0 meter                                                   │
+│    - Depth (Y):  1.0 meter                                                   │
+│    - Height (Z): 1.0 meter                                                   │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MEASUREMENTS ───────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  Ground to Platform Top:     1.0 meter                                       │
+│  Platform Top to Robot Base: 0.1 meter (clearance)                           │
+│  Ground to Robot Base:       1.1 meter                                       │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌─ PROPERTIES ─────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  Platform:                                                                   │
+│    • Type: Static (non-moving, fixed)                                        │
+│    • Material: Blue-gray appearance                                          │
+│    • Collision: Enabled (robot can stand on it)                              │
+│    • Mass: Infinite (static objects don't have dynamic mass)                 │
+│                                                                              │
+│  Robot:                                                                      │
+│    • Spawned at z = 1.1m (on top of platform)                                │
+│    • Dynamic (can move joints)                                               │
+│    • Controlled by position controller                                       │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌─ LAUNCH COMMANDS ────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  # Standard launch with platform                                             │
+│  ros2 launch hexapod_gz spawn_robot.launch.py                                │
+│                                                                              │
+│  # With PlotJuggler visualization                                            │
+│  ros2 launch hexapod_gz spawn_robot_with_viz.launch.py plotjuggler:=true    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  ✅ Your robot now stands on a 1-meter tall static platform!                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝

@@ -9,10 +9,11 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', ['launch/sim.launch.py']),
-        ('share/' + package_name + '/config', ['config/ros2_controllers.yaml']),
-    ('share/' + package_name + '/urdf', ['urdf/hexapod_modelling_team.xacro', 'urdf/control.xacro']),
+        ('share/' + package_name + '/launch', ['launch/spawn_robot.launch.py', 'launch/spawn_robot_with_viz.launch.py']),
+        ('share/' + package_name + '/config', ['config/ros2_controllers.yaml', 'config/plotjuggler_layout.xml']),
+        ('share/' + package_name + '/urdf', ['urdf/hexapod_modelling_team.xacro']),
         ('share/' + package_name + '/worlds', ['worlds/hexapod.sdf']),
+        ('share/' + package_name + '/meshes', ['meshes/base_link.STL', 'meshes/Link1.STL', 'meshes/Link_2.STL']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -23,6 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'joint_position_commander = hexapod_gz.joint_position_commander:main',
+            'manual_joint_control = hexapod_gz.manual_joint_control:main',
         ],
     },
 )

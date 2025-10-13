@@ -19,14 +19,15 @@ class JointPositionCommander(Node):
 
         self.get_logger().info(f'Publishing joint positions to {topic} for joints: {self.joints}')
         self.t = 0.0
-        self.timer = self.create_timer(0.05, self.on_timer)  # 20 Hz
+        self.dt = 0.01  # Time step for smoother control
+        self.timer = self.create_timer(self.dt, self.on_timer)  # 100 Hz
 
     def on_timer(self):
         # Simple sine sweep for two joints; extend if more joints exist later
         pos: List[float] = []
         pos.append(0.5 * math.sin(self.t))  # rev1
         pos.append(-0.5 * math.sin(self.t * 0.8 + 0.5))  # rev_2
-        self.t += 0.05
+        self.t += self.dt
 
         msg = Float64MultiArray()
         msg.data = pos

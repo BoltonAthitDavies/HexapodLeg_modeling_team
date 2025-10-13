@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 100
+    update_rate: 200  # Hz - Increased for faster response
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -13,8 +13,10 @@ joint_position_controller:
     joints:
       - rev1
       - rev_2
+    
     command_interfaces:
       - position
+    
     state_interfaces:
       - position
       - velocity
