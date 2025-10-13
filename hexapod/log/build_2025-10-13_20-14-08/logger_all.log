@@ -1,0 +1,383 @@
+[0.103s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.103s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7aceefb5dc30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7aceefce34f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7aceefce34f0>>)
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.291s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ambushee/HexapodLeg_modeling_team/hexapod'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ignore_ament_install'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['colcon_pkg']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_description) by extension 'ros'
+[0.312s] DEBUG:colcon.colcon_core.package_identification:Package 'src/example_description' with type 'ros.ament_cmake' and name 'example_description'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_controller) by extension 'ros'
+[0.313s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hexapod_controller' with type 'ros.ament_python' and name 'hexapod_controller'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gazebo) by extension 'ros'
+[0.314s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hexapod_gazebo' with type 'ros.ament_cmake' and name 'hexapod_gazebo'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'ros'
+[0.315s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hexapod_gz' with type 'ros.ament_python' and name 'hexapod_gz'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_modelling_team) by extension 'ros'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hexapod_modelling_team' with type 'ros.ament_cmake' and name 'hexapod_modelling_team'
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.336s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.336s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/ambushee/HexapodLeg_modeling_team/hexapod/install
+[0.337s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ambushee/ros2_ws/install
+[0.338s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 359 installed packages in /opt/ros/humble
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_target' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'example_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.397s] DEBUG:colcon.colcon_core.verb:Building package 'example_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/example_description', 'symlink_install': False, 'test_result_base': None}
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'cmake_target' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.398s] DEBUG:colcon.colcon_core.verb:Building package 'hexapod_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_controller', 'symlink_install': False, 'test_result_base': None}
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'cmake_target' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'cmake_clean_cache' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'cmake_clean_first' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'cmake_force_configure' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'ament_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'catkin_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_modelling_team' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.399s] DEBUG:colcon.colcon_core.verb:Building package 'hexapod_modelling_team' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team', 'symlink_install': False, 'test_result_base': None}
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.399s] DEBUG:colcon.colcon_core.verb:Building package 'hexapod_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_target' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.400s] DEBUG:colcon.colcon_core.verb:Building package 'hexapod_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gz', 'symlink_install': False, 'test_result_base': None}
+[0.400s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.401s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.401s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team' with build type 'ament_cmake'
+[0.402s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team'
+[0.404s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.409s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/example_description' with build type 'ament_cmake'
+[0.409s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/example_description'
+[0.409s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.409s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.415s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_controller' with build type 'ament_python'
+[0.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_controller', 'ament_prefix_path')
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/hook/ament_prefix_path.ps1'
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/hook/ament_prefix_path.dsv'
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/hook/ament_prefix_path.sh'
+[0.419s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.419s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake /home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team -DCMAKE_INSTALL_PREFIX=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake /home/ambushee/HexapodLeg_modeling_team/hexapod/src/example_description -DCMAKE_INSTALL_PREFIX=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description
+[0.919s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_controller'
+[0.919s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.919s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_controller': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_controller build --build-base /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build install --record /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/install.log --single-version-externally-managed install_data
+[2.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_controller' returned '0': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_controller build --build-base /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build install --record /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/install.log --single-version-externally-managed install_data
+[2.161s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller' for CMake module files
+[2.161s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller' for CMake config files
+[2.162s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib'
+[2.162s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/bin'
+[2.163s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/pkgconfig/hexapod_controller.pc'
+[2.163s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages'
+[2.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_controller', 'pythonpath')
+[2.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/hook/pythonpath.ps1'
+[2.164s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/hook/pythonpath.dsv'
+[2.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/hook/pythonpath.sh'
+[2.165s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/bin'
+[2.165s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hexapod_controller)
+[2.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/package.ps1'
+[2.167s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/package.dsv'
+[2.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/package.sh'
+[2.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/package.bash'
+[2.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller/package.zsh'
+[2.170s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/colcon-core/packages/hexapod_controller)
+[2.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake /home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team -DCMAKE_INSTALL_PREFIX=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team
+[2.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team -- -j16 -l16
+[2.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake /home/ambushee/HexapodLeg_modeling_team/hexapod/src/example_description -DCMAKE_INSTALL_PREFIX=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description
+[2.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description -- -j16 -l16
+[2.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team -- -j16 -l16
+[3.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team
+[3.037s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hexapod_modelling_team)
+[3.038s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team' for CMake module files
+[3.039s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team' for CMake config files
+[3.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_modelling_team', 'cmake_prefix_path')
+[3.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/hook/cmake_prefix_path.ps1'
+[3.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_modelling_team
+[3.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/hook/cmake_prefix_path.dsv'
+[3.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/hook/cmake_prefix_path.sh'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/lib'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/bin'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/lib/pkgconfig/hexapod_modelling_team.pc'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/lib/python3.10/site-packages'
+[3.045s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/bin'
+[3.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.ps1'
+[3.046s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.dsv'
+[3.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.sh'
+[3.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.bash'
+[3.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.zsh'
+[3.049s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/colcon-core/packages/hexapod_modelling_team)
+[3.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hexapod_modelling_team)
+[3.051s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team' for CMake module files
+[3.052s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team' for CMake config files
+[3.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_modelling_team', 'cmake_prefix_path')
+[3.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/hook/cmake_prefix_path.ps1'
+[3.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/hook/cmake_prefix_path.dsv'
+[3.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/hook/cmake_prefix_path.sh'
+[3.056s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/lib'
+[3.056s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/bin'
+[3.056s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/lib/pkgconfig/hexapod_modelling_team.pc'
+[3.057s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/lib/python3.10/site-packages'
+[3.057s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/bin'
+[3.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.ps1'
+[3.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.dsv'
+[3.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.sh'
+[3.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.bash'
+[3.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/hexapod_modelling_team/package.zsh'
+[3.063s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team/share/colcon-core/packages/hexapod_modelling_team)
+[3.064s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gazebo' with build type 'ament_cmake'
+[3.064s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gazebo'
+[3.065s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.065s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.073s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gz' with build type 'ament_python'
+[3.073s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_gz', 'ament_prefix_path')
+[3.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/hook/ament_prefix_path.ps1'
+[3.075s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/hook/ament_prefix_path.dsv'
+[3.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/hook/ament_prefix_path.sh'
+[3.076s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.076s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.092s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo': CMAKE_PREFIX_PATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description:/home/ambushee/ros2_ws/install/my_robot_bringup:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake /home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gazebo -DCMAKE_INSTALL_PREFIX=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo
+[3.587s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gz'
+[3.587s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.587s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description -- -j16 -l16
+[3.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description
+[3.681s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_description)
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description' for CMake module files
+[3.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/hexapod/build/example_description
+[3.683s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description' for CMake config files
+[3.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_description', 'cmake_prefix_path')
+[3.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/hook/cmake_prefix_path.ps1'
+[3.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/hook/cmake_prefix_path.dsv'
+[3.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/hook/cmake_prefix_path.sh'
+[3.686s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/lib'
+[3.686s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/bin'
+[3.686s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/lib/pkgconfig/example_description.pc'
+[3.686s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/lib/python3.10/site-packages'
+[3.687s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/bin'
+[3.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.ps1'
+[3.688s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.dsv'
+[3.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.sh'
+[3.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.bash'
+[3.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.zsh'
+[3.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/colcon-core/packages/example_description)
+[3.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_description)
+[3.691s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description' for CMake module files
+[3.692s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description' for CMake config files
+[3.692s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_description', 'cmake_prefix_path')
+[3.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/hook/cmake_prefix_path.ps1'
+[3.693s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/hook/cmake_prefix_path.dsv'
+[3.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/hook/cmake_prefix_path.sh'
+[3.694s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/lib'
+[3.695s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/bin'
+[3.695s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/lib/pkgconfig/example_description.pc'
+[3.695s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/lib/python3.10/site-packages'
+[3.695s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/bin'
+[3.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.ps1'
+[3.696s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.dsv'
+[3.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.sh'
+[3.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.bash'
+[3.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/example_description/package.zsh'
+[3.699s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description/share/colcon-core/packages/example_description)
+[4.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description:/home/ambushee/ros2_ws/install/my_robot_bringup:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake /home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gazebo -DCMAKE_INSTALL_PREFIX=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo
+[4.134s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo': CMAKE_PREFIX_PATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description:/home/ambushee/ros2_ws/install/my_robot_bringup:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo -- -j16 -l16
+[4.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description:/home/ambushee/ros2_ws/install/my_robot_bringup:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo -- -j16 -l16
+[4.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo': CMAKE_PREFIX_PATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description:/home/ambushee/ros2_ws/install/my_robot_bringup:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo
+[4.234s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hexapod_gazebo)
+[4.234s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo' for CMake module files
+[4.235s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo' for CMake config files
+[4.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_gazebo', 'cmake_prefix_path')
+[4.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/hook/cmake_prefix_path.ps1'
+[4.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description:/home/ambushee/ros2_ws/install/my_robot_bringup:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo
+[4.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/hook/cmake_prefix_path.dsv'
+[4.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/hook/cmake_prefix_path.sh'
+[4.240s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/bin'
+[4.240s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/lib/pkgconfig/hexapod_gazebo.pc'
+[4.240s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/lib/python3.10/site-packages'
+[4.241s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/bin'
+[4.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.ps1'
+[4.242s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.dsv'
+[4.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.sh'
+[4.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.bash'
+[4.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.zsh'
+[4.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/colcon-core/packages/hexapod_gazebo)
+[4.246s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hexapod_gazebo)
+[4.246s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo' for CMake module files
+[4.247s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo' for CMake config files
+[4.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_gazebo', 'cmake_prefix_path')
+[4.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/hook/cmake_prefix_path.ps1'
+[4.249s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/hook/cmake_prefix_path.dsv'
+[4.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/hook/cmake_prefix_path.sh'
+[4.251s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/bin'
+[4.251s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/lib/pkgconfig/hexapod_gazebo.pc'
+[4.251s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/lib/python3.10/site-packages'
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/bin'
+[4.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.ps1'
+[4.253s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.dsv'
+[4.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.sh'
+[4.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.bash'
+[4.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/hexapod_gazebo/package.zsh'
+[4.256s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo/share/colcon-core/packages/hexapod_gazebo)
+[4.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gz': CMAKE_PREFIX_PATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description:/home/ambushee/ros2_ws/install/my_robot_bringup PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_gz build --build-base /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build install --record /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/install.log --single-version-externally-managed install_data
+[4.774s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz' for CMake module files
+[4.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_gz' returned '0': CMAKE_PREFIX_PATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_modelling_team:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gazebo:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/example_description:/home/ambushee/ros2_ws/install/my_robot_bringup PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_gz build --build-base /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build install --record /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/install.log --single-version-externally-managed install_data
+[4.776s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz' for CMake config files
+[4.776s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib'
+[4.776s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/bin'
+[4.776s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/pkgconfig/hexapod_gz.pc'
+[4.777s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages'
+[4.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_gz', 'pythonpath')
+[4.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/hook/pythonpath.ps1'
+[4.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/hook/pythonpath.dsv'
+[4.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/hook/pythonpath.sh'
+[4.779s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/bin'
+[4.779s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hexapod_gz)
+[4.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/package.ps1'
+[4.780s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/package.dsv'
+[4.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/package.sh'
+[4.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/package.bash'
+[4.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/package.zsh'
+[4.781s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/colcon-core/packages/hexapod_gz)
+[4.781s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.782s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.782s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.791s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.791s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.792s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.805s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.806s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/local_setup.ps1'
+[4.807s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/_local_setup_util_ps1.py'
+[4.808s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/setup.ps1'
+[4.810s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/local_setup.sh'
+[4.810s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/_local_setup_util_sh.py'
+[4.811s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/setup.sh'
+[4.813s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/local_setup.bash'
+[4.813s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/setup.bash'
+[4.815s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/local_setup.zsh'
+[4.816s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ambushee/HexapodLeg_modeling_team/hexapod/install/setup.zsh'

@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/hexapod_gz/hexapod_gz.egg-info
+writing ../../build/hexapod_gz/hexapod_gz.egg-info/PKG-INFO
+writing dependency_links to ../../build/hexapod_gz/hexapod_gz.egg-info/dependency_links.txt
+writing entry points to ../../build/hexapod_gz/hexapod_gz.egg-info/entry_points.txt
+writing requirements to ../../build/hexapod_gz/hexapod_gz.egg-info/requires.txt
+writing top-level names to ../../build/hexapod_gz/hexapod_gz.egg-info/top_level.txt
+writing manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+reading manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+writing manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build/lib
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build/lib/hexapod_gz
+copying hexapod_gz/joint_position_commander.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build/lib/hexapod_gz
+copying hexapod_gz/__init__.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build/lib/hexapod_gz
+running install
+running install_lib
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz
+copying /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build/lib/hexapod_gz/joint_position_commander.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz
+copying /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/build/lib/hexapod_gz/__init__.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz
+byte-compiling /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/joint_position_commander.py to joint_position_commander.cpython-310.pyc
+byte-compiling /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/ament_index
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/ament_index/resource_index
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/ament_index/resource_index/packages
+copying resource/hexapod_gz -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/ament_index/resource_index/packages
+copying package.xml -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/launch
+copying launch/sim.launch.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/launch
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/config
+copying config/ros2_controllers.yaml -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/config
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/urdf
+copying urdf/hexapod_modelling_team.xacro -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/urdf
+copying urdf/control.xacro -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/urdf
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/worlds
+copying worlds/hexapod.sdf -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/share/hexapod_gz/worlds
+running install_egg_info
+Copying ../../build/hexapod_gz/hexapod_gz.egg-info to /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info
+running install_scripts
+Installing joint_position_commander script to /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_gz/lib/hexapod_gz
+writing list of installed files to '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gz/install.log'

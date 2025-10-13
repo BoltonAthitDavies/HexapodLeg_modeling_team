@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="hexapod_modelling_team">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0287154638056784 0.0247731094216198 0.035584269509276"
+        rpy="0 0 0" />
+      <mass
+        value="0.382085922418597" />
+      <inertia
+        ixx="0.000410490029616126"
+        ixy="-3.63493037242176E-10"
+        ixz="0.000105450395848999"
+        iyy="0.000858141213625033"
+        iyz="-4.7056833493851E-07"
+        izz="0.000481448906035878" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexapod_modelling_team/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexapod_modelling_team/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.0744903369422901 0.0426388780495074 0.00449405457409234"
+        rpy="0 0 0" />
+      <mass
+        value="0.216695042917165" />
+      <inertia
+        ixx="0.000130440591615854"
+        ixy="5.70003393072442E-05"
+        ixz="1.47989875138492E-06"
+        iyy="0.000175918627847008"
+        iyz="-1.28953663827066E-06"
+        izz="0.000157070086725617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexapod_modelling_team/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexapod_modelling_team/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rev_1"
+    type="continuous">
+    <origin
+      xyz="0.028716 -0.035372 0.064707"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-0.0324493531460042 0.029972598412306 0.0123563925629702"
+        rpy="0 0 0" />
+      <mass
+        value="0.0273014552676097" />
+      <inertia
+        ixx="1.37058949343199E-05"
+        ixy="1.18686760093769E-05"
+        ixz="1.29144870428884E-06"
+        iyy="1.55925483685857E-05"
+        iyz="-1.19287660232059E-06"
+        izz="2.86373762930093E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexapod_modelling_team/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hexapod_modelling_team/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rev_2"
+    type="continuous">
+    <origin
+      xyz="-0.079154 0.062411 0.0045"
+      rpy="-1.5708 0 -0.51329" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ros2_control for Gazebo Sim is loaded as a system plugin in the launcher. -->
+
+  <!-- Add color materials -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="Link1">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="Link_2">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!-- Set material properties -->
+  <xacro:macro name="gazebo_material" params="link material:='Gazebo/Grey' ambient:='0.2 0.2 0.2 1' diffuse:='0.7 0.7 0.7 1' specular:='0.1 0.1 0.1 1' emissive:='0 0 0 1' cast_shadows:='true'">
+    <gazebo reference="${link}">
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>${material}</name>
+        </script>
+        <ambient>${ambient}</ambient>
+        <diffuse>${diffuse}</diffuse>
+        <specular>${specular}</specular>
+        <emissive>${emissive}</emissive>
+        <cast_shadows>${cast_shadows}</cast_shadows>
+      </material>
+    </gazebo>
+  </xacro:macro>
+
+</robot>

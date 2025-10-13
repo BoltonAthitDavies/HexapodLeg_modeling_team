@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hexapod_gz</name>
+  <version>0.1.0</version>
+  <description>Spawn the hexapod in Gazebo Sim (ros_gz_sim) and control joints via ros2_control position controller.</description>
+  <maintainer email="you@example.com">hexapod_dev</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>ros2_control</exec_depend>
+  <exec_depend>ros2_controllers</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>position_controllers</exec_depend>
+  <exec_depend>gz_ros2_control</exec_depend>
+  <exec_depend>ign_ros2_control</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>hexapod_modelling_team</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

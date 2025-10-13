@@ -1,0 +1,4 @@
+source;share/hexapod_modelling_team/local_setup.bash
+source;share/hexapod_modelling_team/local_setup.dsv
+source;share/hexapod_modelling_team/local_setup.sh
+source;share/hexapod_modelling_team/local_setup.zsh

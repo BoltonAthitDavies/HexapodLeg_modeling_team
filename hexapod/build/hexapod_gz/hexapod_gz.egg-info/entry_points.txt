@@ -1,0 +1,3 @@
+[console_scripts]
+joint_position_commander = hexapod_gz.joint_position_commander:main
+

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="hexapod_modelling_team">
+    <static>false</static>
+    <link name="base_link">
+      <visual name="base_link_visual">
+        <geometry>
+          <mesh>
+            <uri>model://hexapod_modelling_team/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_collision">
+        <geometry>
+          <mesh>
+            <uri>model://hexapod_modelling_team/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="Link1">
+      <visual name="Link1_visual">
+        <geometry>
+          <mesh>
+            <uri>model://hexapod_modelling_team/meshes/Link1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="Link1_collision">
+        <geometry>
+          <mesh>
+            <uri>model://hexapod_modelling_team/meshes/Link1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="Link_2">
+      <visual name="Link_2_visual">
+        <geometry>
+          <mesh>
+            <uri>model://hexapod_modelling_team/meshes/Link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="Link_2_collision">
+        <geometry>
+          <mesh>
+            <uri>model://hexapod_modelling_team/meshes/Link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
