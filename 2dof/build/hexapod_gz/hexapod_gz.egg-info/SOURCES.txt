@@ -15,7 +15,10 @@ hexapod_gz/PD_Controller.py
 hexapod_gz/__init__.py
 hexapod_gz/joint_position_commander.py
 hexapod_gz/manual_joint_control.py
+hexapod_gz/pd_position_commander.py
+hexapod_gz/pd_torque_controller_node.py
 launch/spawn_robot.launch.py
+launch/spawn_robot_pd.launch.py
 launch/spawn_robot_with_viz.launch.py
 meshes/Link1.STL
 meshes/Link_2.STL
