@@ -69,6 +69,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team/meshes"
     "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team/urdf"
     "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team/rviz"
+    "/home/ambushee/HexapodLeg_modeling_team/hexapod/src/hexapod_modelling_team/models"
     )
 endif()
 

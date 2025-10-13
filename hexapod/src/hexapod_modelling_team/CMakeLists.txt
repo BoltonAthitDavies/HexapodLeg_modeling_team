@@ -66,6 +66,7 @@ install(DIRECTORY
   meshes
   urdf
   rviz
+  models
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()

@@ -1,63 +1,22 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="gazebo_addons">
-  <!-- =====================
-       Gazebo add-ons (URDF/Xacro helpers)
-       Works with:
-        - Gazebo Sim (Ignition/GZ): use gz_ros2_control-system plugin
-        - Gazebo Classic (EOL Jan 2025): use gazebo_ros2_control plugin
-       ===================== -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <!-- Paths / defaults you can override when expanding xacro -->
-  <xacro:property name="ros2_control_config" value="package://hexapod_modelling_team/config/ros2_controllers.yaml"/>
+  <!-- ros2_control for Gazebo Sim is loaded as a system plugin in the launcher. -->
 
-  <!-- =====================
-       ros2_control (Gazebo Sim / GZ)
-       Adds the gz_ros2_control system plugin.
-       Example call in your main .xacro (after ros2_control tags in URDF):
-         <xacro:hexapod_gz_ros2_control
-             param_file:='package://hexapod_modelling_team/config/ros2_controllers.yaml'
-             robot_param:='robot_description'
-             robot_param_node:='robot_state_publisher'
-             controller_manager_name:='controller_manager'
-             namespace:=''/>
-       ===================== -->
-  <xacro:macro name="hexapod_gz_ros2_control" params="param_file:='${ros2_control_config}' robot_param:='robot_description' robot_param_node:='robot_state_publisher' controller_manager_name:='controller_manager' namespace:=''">
-    <gazebo>
-      <!-- As per ros2_control docs for Humble: filename='gz_ros2_control-system' -->
-      <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-        <robot_param>${robot_param}</robot_param>
-        <robot_param_node>${robot_param_node}</robot_param_node>
-        <controller_manager_name>${controller_manager_name}</controller_manager_name>
-        <parameters>${param_file}</parameters>
-        <!-- Optional ROS namespace/remaps -->
-        <xacro:if value="${namespace != ''}">
-          <ros>
-            <namespace>${namespace}</namespace>
-          </ros>
-        </xacro:if>
-      </plugin>
-    </gazebo>
-  </xacro:macro>
+  <!-- Add color materials -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
 
-  <!-- =====================
-       ros2_control (Gazebo Classic)
-       Only use this if you run Gazebo Classic.
-       Example:
-         <xacro:hexapod_gazebo_classic_ros2_control param_file:='$(find-pkg-share hexapod_modelling_team)/config/ros2_controllers.yaml'/>
-       ===================== -->
-  <xacro:macro name="hexapod_gazebo_classic_ros2_control" params="param_file:='${ros2_control_config}'">
-    <gazebo>
-      <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-        <parameters>${param_file}</parameters>
-      </plugin>
-    </gazebo>
-  </xacro:macro>
+  <gazebo reference="Link1">
+    <material>Gazebo/Grey</material>
+  </gazebo>
 
-  <!-- =====================
-       Appearance helper (Classic-compatible)
-       Sets material & colors for a given link's visuals inside Gazebo.
-       material: 'Gazebo/Red', 'Gazebo/Grey', etc.
-       ===================== -->
+  <gazebo reference="Link_2">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!-- Set material properties -->
   <xacro:macro name="gazebo_material" params="link material:='Gazebo/Grey' ambient:='0.2 0.2 0.2 1' diffuse:='0.7 0.7 0.7 1' specular:='0.1 0.1 0.1 1' emissive:='0 0 0 1' cast_shadows:='true'">
     <gazebo reference="${link}">
       <material>
@@ -69,39 +28,8 @@
         <diffuse>${diffuse}</diffuse>
         <specular>${specular}</specular>
         <emissive>${emissive}</emissive>
+        <cast_shadows>${cast_shadows}</cast_shadows>
       </material>
-      <cast_shadows>${cast_shadows}</cast_shadows>
-    </gazebo>
-  </xacro:macro>
-
-  <!-- =====================
-       Contact / friction helper (Classic-compatible)
-       Tune contact parameters for a link's collisions in Gazebo.
-       ===================== -->
-  <xacro:macro name="gazebo_surface" params="link mu1:='1.0' mu2:='1.0' kp:='1e6' kd:='1.0' min_depth:='0.001' max_contacts:='20'">
-    <gazebo reference="${link}">
-      <mu1>${mu1}</mu1>
-      <mu2>${mu2}</mu2>
-      <kp>${kp}</kp>
-      <kd>${kd}</kd>
-      <min_depth>${min_depth}</min_depth>
-      <max_contacts>${max_contacts}</max_contacts>
-    </gazebo>
-  </xacro:macro>
-
-  <!-- =====================
-       IMU Sensor helper (works in GZ via SDF sensor embedding)
-       Places an IMU sensor attached to the given link.
-       The topic will be relative to the model's namespace if used.
-       ===================== -->
-  <xacro:macro name="add_imu_sensor" params="link name:='imu' update_rate:='200' topic:='imu' visualize:='false'">
-    <gazebo reference="${link}">
-      <sensor name="${name}" type="imu">
-        <always_on>true</always_on>
-        <update_rate>${update_rate}</update_rate>
-        <visualize>${visualize}</visualize>
-        <topic>${topic}</topic>
-      </sensor>
     </gazebo>
   </xacro:macro>
 

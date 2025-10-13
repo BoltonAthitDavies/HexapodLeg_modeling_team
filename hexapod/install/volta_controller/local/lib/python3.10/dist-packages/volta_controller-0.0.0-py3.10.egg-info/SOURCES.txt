@@ -1,7 +1,0 @@
-setup.py
-volta_controller/__init__.py
-volta_controller/dummy_module.py
-volta_controller.egg-info/PKG-INFO
-volta_controller.egg-info/SOURCES.txt
-volta_controller.egg-info/dependency_links.txt
-volta_controller.egg-info/top_level.txt

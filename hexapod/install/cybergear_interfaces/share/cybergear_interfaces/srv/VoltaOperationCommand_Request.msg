@@ -1,1 +1,0 @@
-int16 operation_command

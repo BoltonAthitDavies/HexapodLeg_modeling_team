@@ -1,7 +1,0 @@
-setup.py
-cybergear_driver/__init__.py
-cybergear_driver/dummy_module.py
-cybergear_driver.egg-info/PKG-INFO
-cybergear_driver.egg-info/SOURCES.txt
-cybergear_driver.egg-info/dependency_links.txt
-cybergear_driver.egg-info/top_level.txt

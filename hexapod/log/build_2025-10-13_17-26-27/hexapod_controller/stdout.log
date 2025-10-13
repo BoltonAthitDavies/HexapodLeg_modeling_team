@@ -1,0 +1,51 @@
+running egg_info
+creating ../../build/hexapod_controller/hexapod_controller.egg-info
+writing ../../build/hexapod_controller/hexapod_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/hexapod_controller/hexapod_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/hexapod_controller/hexapod_controller.egg-info/entry_points.txt
+writing requirements to ../../build/hexapod_controller/hexapod_controller.egg-info/requires.txt
+writing top-level names to ../../build/hexapod_controller/hexapod_controller.egg-info/top_level.txt
+writing manifest file '../../build/hexapod_controller/hexapod_controller.egg-info/SOURCES.txt'
+reading manifest file '../../build/hexapod_controller/hexapod_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/hexapod_controller/hexapod_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller
+copying hexapod_controller/start_plotjuggler.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller
+copying hexapod_controller/position_velocity_demo.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller
+copying hexapod_controller/__init__.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller
+copying hexapod_controller/__main__.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller
+running build_scripts
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/scripts-3.10
+copying scripts/position_velocity_demo_shim -> /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/scripts-3.10
+copying scripts/start_plotjuggler_shim -> /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/scripts-3.10
+running install
+running install_lib
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller
+copying /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller/start_plotjuggler.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller
+copying /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller/position_velocity_demo.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller
+copying /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller/__init__.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller
+copying /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/lib/hexapod_controller/__main__.py -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller
+byte-compiling /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller/start_plotjuggler.py to start_plotjuggler.cpython-310.pyc
+byte-compiling /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller/position_velocity_demo.py to position_velocity_demo.cpython-310.pyc
+byte-compiling /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller/__main__.py to __main__.cpython-310.pyc
+running install_data
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/ament_index
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/ament_index/resource_index
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/ament_index/resource_index/packages
+copying resource/hexapod_controller -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/share/hexapod_controller
+running install_egg_info
+Copying ../../build/hexapod_controller/hexapod_controller.egg-info to /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/python3.10/site-packages/hexapod_controller-0.1.0-py3.10.egg-info
+running install_scripts
+creating /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/hexapod_controller
+copying /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/scripts-3.10/start_plotjuggler_shim -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/hexapod_controller
+copying /home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/build/scripts-3.10/position_velocity_demo_shim -> /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/hexapod_controller
+changing mode of /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/hexapod_controller/start_plotjuggler_shim to 775
+changing mode of /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/hexapod_controller/position_velocity_demo_shim to 775
+Installing position_velocity_demo script to /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/hexapod_controller
+Installing start_plotjuggler script to /home/ambushee/HexapodLeg_modeling_team/hexapod/install/hexapod_controller/lib/hexapod_controller
+writing list of installed files to '/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_controller/install.log'
