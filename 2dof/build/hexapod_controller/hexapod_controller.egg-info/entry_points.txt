@@ -1,4 +1,0 @@
-[console_scripts]
-position_velocity_demo = hexapod_controller.position_velocity_demo:main
-start_plotjuggler = hexapod_controller.start_plotjuggler:main
-

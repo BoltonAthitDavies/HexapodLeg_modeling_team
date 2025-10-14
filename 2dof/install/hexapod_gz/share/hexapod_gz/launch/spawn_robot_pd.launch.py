@@ -162,7 +162,7 @@ def generate_launch_description():
             "kd_rev1": kd_rev1,
             "kp_rev2": kp_rev2,
             "kd_rev2": kd_rev2,
-            "update_rate": 100.0,
+            "update_rate": 200.0,  # Match controller_manager rate for synchronized plotting
         }],
         condition=IfCondition(use_pd),
     )

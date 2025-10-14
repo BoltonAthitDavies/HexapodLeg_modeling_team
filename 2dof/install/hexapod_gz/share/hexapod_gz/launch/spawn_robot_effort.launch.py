@@ -30,44 +30,36 @@ def generate_launch_description():
     )
     declared_arguments.append(
         DeclareLaunchArgument(
-            "use_pd_controller",
-            default_value="true",
-            description="Use PD controller instead of simple sine wave",
-        )
-    )
-    declared_arguments.append(
-        DeclareLaunchArgument(
             "kp_rev1",
-            default_value="5.0",
-            description="Proportional gain for rev1 joint",
+            default_value="50.0",
+            description="Proportional gain for rev1 joint (torque control)",
         )
     )
     declared_arguments.append(
         DeclareLaunchArgument(
             "kd_rev1",
-            default_value="0.5",
-            description="Derivative gain for rev1 joint",
+            default_value="5.0",
+            description="Derivative gain for rev1 joint (torque control)",
         )
     )
     declared_arguments.append(
         DeclareLaunchArgument(
             "kp_rev2",
-            default_value="4.0",
-            description="Proportional gain for rev_2 joint",
+            default_value="40.0",
+            description="Proportional gain for rev_2 joint (torque control)",
         )
     )
     declared_arguments.append(
         DeclareLaunchArgument(
             "kd_rev2",
-            default_value="0.4",
-            description="Derivative gain for rev_2 joint",
+            default_value="4.0",
+            description="Derivative gain for rev_2 joint (torque control)",
         )
     )
 
     # Initialize Arguments
     gui = LaunchConfiguration("gui")
     use_sim_time = LaunchConfiguration("use_sim_time")
-    use_pd = LaunchConfiguration("use_pd_controller")
     kp_rev1 = LaunchConfiguration("kp_rev1")
     kd_rev1 = LaunchConfiguration("kd_rev1")
     kp_rev2 = LaunchConfiguration("kp_rev2")
@@ -128,10 +120,10 @@ def generate_launch_description():
         output="screen",
     )
 
-    # Load joint position controller
-    load_joint_position_controller = ExecuteProcess(
+    # Load effort controller (instead of position controller)
+    load_effort_controller = ExecuteProcess(
         cmd=["ros2", "control", "load_controller", "--set-state", "active",
-             "joint_position_controller"],
+             "effort_controller"],
         output="screen",
     )
 
@@ -143,18 +135,18 @@ def generate_launch_description():
         )
     )
 
-    delay_joint_position_controller_after_joint_state_broadcaster = RegisterEventHandler(
+    delay_effort_controller_after_joint_state_broadcaster = RegisterEventHandler(
         event_handler=OnProcessExit(
             target_action=load_joint_state_broadcaster,
-            on_exit=[load_joint_position_controller],
+            on_exit=[load_effort_controller],
         )
     )
 
-    # PD Position Commander Node (NEW!)
-    pd_commander_node = Node(
+    # PD Position Effort Commander Node (torque control)
+    pd_effort_commander_node = Node(
         package="hexapod_gz",
-        executable="pd_position_commander",
-        name="pd_position_commander",
+        executable="pd_position_effort",
+        name="pd_position_effort",
         output="screen",
         parameters=[{
             "use_sim_time": use_sim_time,
@@ -164,17 +156,6 @@ def generate_launch_description():
             "kd_rev2": kd_rev2,
             "update_rate": 200.0,  # Match controller_manager rate for synchronized plotting
         }],
-        condition=IfCondition(use_pd),
-    )
-
-    # Simple Joint Position Commander (for comparison)
-    simple_commander_node = Node(
-        package="hexapod_gz",
-        executable="joint_position_commander",
-        name="joint_position_commander",
-        output="screen",
-        parameters=[{"use_sim_time": use_sim_time}],
-        condition=IfCondition(LaunchConfiguration("use_pd_controller", default="false")),
     )
 
     nodes = [
@@ -182,8 +163,8 @@ def generate_launch_description():
         gazebo,
         spawn_entity,
         delay_joint_state_broadcaster_after_spawn,
-        delay_joint_position_controller_after_joint_state_broadcaster,
-        pd_commander_node,
+        delay_effort_controller_after_joint_state_broadcaster,
+        pd_effort_commander_node,
     ]
 
     return LaunchDescription(declared_arguments + nodes)

@@ -23,7 +23,7 @@ class PDPositionCommander(Node):
         self.declare_parameter('kd_rev1', 0.5)
         self.declare_parameter('kp_rev2', 4.0)
         self.declare_parameter('kd_rev2', 0.4)
-        self.declare_parameter('update_rate', 100.0)
+        self.declare_parameter('update_rate', 200.0)  # Match controller_manager rate
         
         # Get parameters
         kp_rev1 = self.get_parameter('kp_rev1').value
@@ -36,10 +36,17 @@ class PDPositionCommander(Node):
         self.pd_rev1 = PDController(Kp=kp_rev1, Kd=kd_rev1)
         self.pd_rev2 = PDController(Kp=kp_rev2, Kd=kd_rev2)
         
-        # Publisher for position commands
+        # Publisher for position commands (actual commands sent to controller)
         self.position_pub = self.create_publisher(
             Float64MultiArray,
             '/joint_position_controller/commands',
+            10
+        )
+        
+        # Publisher for reference trajectory (for visualization)
+        self.reference_pub = self.create_publisher(
+            Float64MultiArray,
+            '/joint_reference',
             10
         )
         
@@ -88,45 +95,36 @@ class PDPositionCommander(Node):
             pass
     
     def control_loop(self):
-        """Generate smooth trajectory with PD-based feedforward"""
+        """Generate smooth trajectory with PD control"""
         
-        # Reference trajectory (sine wave)
+        # Reference trajectory (desired sine wave - smooth)
         ref_pos_rev1 = 0.5 * math.sin(self.t)
         ref_vel_rev1 = 0.5 * math.cos(self.t)
         
         ref_pos_rev2 = -0.5 * math.sin(self.t * 0.8 + 0.5)
         ref_vel_rev2 = -0.5 * 0.8 * math.cos(self.t * 0.8 + 0.5)
         
-        # If we have feedback, use PD to compute correction
+        # Publish reference trajectory (for visualization in PlotJuggler)
+        ref_msg = Float64MultiArray()
+        ref_msg.data = [ref_pos_rev1, ref_pos_rev2]
+        self.reference_pub.publish(ref_msg)
+        
+        # If we have feedback, use just the reference
+        # (The underlying position controller will handle tracking)
         if self.has_joint_state:
-            # Compute position correction using PD control
-            # Output is treated as position correction, not torque
-            correction_rev1 = self.pd_rev1.compute_torque(
-                set_angle=ref_pos_rev1,
-                current_angle=self.current_positions[0],
-                set_speed=ref_vel_rev1,
-                current_speed=self.current_velocities[0]
-            ) * 0.01  # Scale down for position correction
-            
-            correction_rev2 = self.pd_rev2.compute_torque(
-                set_angle=ref_pos_rev2,
-                current_angle=self.current_positions[1],
-                set_speed=ref_vel_rev2,
-                current_speed=self.current_velocities[1]
-            ) * 0.01
-            
-            # Commanded position = reference + correction
-            cmd_pos_rev1 = ref_pos_rev1 + correction_rev1
-            cmd_pos_rev2 = ref_pos_rev2 + correction_rev2
+            # Send the smooth reference trajectory directly
+            # The position controller will handle the servo control
+            cmd_pos_rev1 = ref_pos_rev1
+            cmd_pos_rev2 = ref_pos_rev2
         else:
             # No feedback yet, use open-loop reference
             cmd_pos_rev1 = ref_pos_rev1
             cmd_pos_rev2 = ref_pos_rev2
         
         # Publish position commands
-        msg = Float64MultiArray()
-        msg.data = [cmd_pos_rev1, cmd_pos_rev2]
-        self.position_pub.publish(msg)
+        cmd_msg = Float64MultiArray()
+        cmd_msg.data = [cmd_pos_rev1, cmd_pos_rev2]
+        self.position_pub.publish(cmd_msg)
         
         # Increment time
         self.t += self.dt

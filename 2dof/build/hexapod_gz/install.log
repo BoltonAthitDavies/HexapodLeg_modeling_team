@@ -1,12 +1,10 @@
-/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/pd_torque_controller_node.py
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/PD_Controller.py
-/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/joint_position_commander.py
+/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/pd_position_effort.py
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__init__.py
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/pd_position_commander.py
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/manual_joint_control.py
-/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__pycache__/pd_torque_controller_node.cpython-310.pyc
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__pycache__/PD_Controller.cpython-310.pyc
-/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__pycache__/joint_position_commander.cpython-310.pyc
+/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__pycache__/pd_position_effort.cpython-310.pyc
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__pycache__/__init__.cpython-310.pyc
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__pycache__/pd_position_commander.cpython-310.pyc
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/__pycache__/manual_joint_control.cpython-310.pyc
@@ -29,7 +27,5 @@
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info/SOURCES.txt
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info/top_level.txt
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info/PKG-INFO
-/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz/joint_position_commander
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz/manual_joint_control
 /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz/pd_position_commander
-/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz/pd_torque_controller

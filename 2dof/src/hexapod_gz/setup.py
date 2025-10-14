@@ -23,10 +23,8 @@ setup(
     license='BSD-3-Clause',
     entry_points={
         'console_scripts': [
-            'joint_position_commander = hexapod_gz.joint_position_commander:main',
             'manual_joint_control = hexapod_gz.manual_joint_control:main',
             'pd_position_commander = hexapod_gz.pd_position_commander:main',
-            'pd_torque_controller = hexapod_gz.pd_torque_controller_node:main',
         ],
     },
 )

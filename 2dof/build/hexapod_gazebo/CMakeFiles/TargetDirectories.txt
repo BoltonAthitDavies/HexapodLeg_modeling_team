@@ -1,9 +1,0 @@
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/uninstall.dir
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/hexapod_gazebo_uninstall.dir
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/test.dir
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/edit_cache.dir
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/rebuild_cache.dir
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/list_install_components.dir
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/install.dir
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/install/local.dir
-/home/ambushee/HexapodLeg_modeling_team/hexapod/build/hexapod_gazebo/CMakeFiles/install/strip.dir
