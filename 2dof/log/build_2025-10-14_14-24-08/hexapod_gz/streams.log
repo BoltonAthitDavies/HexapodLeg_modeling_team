@@ -1,0 +1,34 @@
+[0.625s] Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_gz build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log --single-version-externally-managed install_data
+[0.859s] running egg_info
+[0.860s] writing ../../build/hexapod_gz/hexapod_gz.egg-info/PKG-INFO
+[0.860s] writing dependency_links to ../../build/hexapod_gz/hexapod_gz.egg-info/dependency_links.txt
+[0.860s] writing entry points to ../../build/hexapod_gz/hexapod_gz.egg-info/entry_points.txt
+[0.860s] writing requirements to ../../build/hexapod_gz/hexapod_gz.egg-info/requires.txt
+[0.860s] writing top-level names to ../../build/hexapod_gz/hexapod_gz.egg-info/top_level.txt
+[0.862s] reading manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+[0.862s] writing manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+[0.863s] running build
+[0.863s] running build_py
+[0.863s] copying hexapod_gz/pd_torque_controller_node.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build/lib/hexapod_gz
+[0.863s] copying hexapod_gz/joint_position_commander.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build/lib/hexapod_gz
+[0.863s] copying hexapod_gz/pd_position_commander.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build/lib/hexapod_gz
+[0.863s] running install
+[0.863s] running install_lib
+[0.864s] copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build/lib/hexapod_gz/pd_torque_controller_node.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz
+[0.864s] copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build/lib/hexapod_gz/joint_position_commander.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz
+[0.864s] copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build/lib/hexapod_gz/pd_position_commander.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz
+[0.864s] byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/pd_torque_controller_node.py to pd_torque_controller_node.cpython-310.pyc
+[0.865s] byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/joint_position_commander.py to joint_position_commander.cpython-310.pyc
+[0.866s] byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/pd_position_commander.py to pd_position_commander.cpython-310.pyc
+[0.867s] running install_data
+[0.867s] copying launch/spawn_robot_pd.launch.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/launch
+[0.867s] copying config/ros2_controllers.yaml -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/config
+[0.867s] copying urdf/hexapod_modelling_team.xacro -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/urdf
+[0.867s] copying worlds/hexapod.sdf -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/worlds
+[0.867s] running install_egg_info
+[0.869s] removing '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info' (and everything under it)
+[0.869s] Copying ../../build/hexapod_gz/hexapod_gz.egg-info to /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info
+[0.870s] running install_scripts
+[0.885s] Installing pd_position_commander script to /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz
+[0.885s] writing list of installed files to '/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log'
+[0.903s] Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz' returned '0': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_gz build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log --single-version-externally-managed install_data

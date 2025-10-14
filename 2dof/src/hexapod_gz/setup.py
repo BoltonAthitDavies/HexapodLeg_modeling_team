@@ -9,7 +9,7 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', ['launch/spawn_robot.launch.py', 'launch/spawn_robot_with_viz.launch.py', 'launch/spawn_robot_pd.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/spawn_robot_pd.launch.py', 'launch/spawn_robot_step.launch.py']),
         ('share/' + package_name + '/config', ['config/ros2_controllers.yaml', 'config/plotjuggler_layout.xml']),
         ('share/' + package_name + '/urdf', ['urdf/hexapod_modelling_team.xacro']),
         ('share/' + package_name + '/worlds', ['worlds/hexapod.sdf']),
@@ -23,8 +23,8 @@ setup(
     license='BSD-3-Clause',
     entry_points={
         'console_scripts': [
-            'manual_joint_control = hexapod_gz.manual_joint_control:main',
             'pd_position_commander = hexapod_gz.pd_position_commander:main',
+            'pd_step_commander = hexapod_gz.pd_step_commander:main',
         ],
     },
 )

@@ -1,4 +1,4 @@
 [console_scripts]
-manual_joint_control = hexapod_gz.manual_joint_control:main
 pd_position_commander = hexapod_gz.pd_position_commander:main
+pd_step_commander = hexapod_gz.pd_step_commander:main
 

@@ -1,0 +1,88 @@
+# Quick Start - Step Controller
+
+## Launch Step Controller
+
+```bash
+source install/setup.bash
+ros2 launch hexapod_gz spawn_robot_step.launch.py
+```
+
+## What It Does
+
+- Moves joints through **5 discrete position steps**
+- Holds each position for **5 seconds** (default)
+- Perfect for analyzing **step response** and **PD tuning**
+
+## Step Sequence
+
+### rev1 joint:
+```
+Step 1: 2.0 rad  →  Step 2: 4.5 rad  →  Step 3: 1.5 rad  →  
+Step 4: 5.0 rad  →  Step 5: 3.14 rad  →  (repeat)
+```
+
+### rev_2 joint:
+```
+Step 1: -0.5 rad  →  Step 2: 1.5 rad  →  Step 3: 0.0 rad  →  
+Step 4: 2.0 rad   →  Step 5: 0.765 rad  →  (repeat)
+```
+
+## Custom Step Duration
+
+```bash
+# 3 second steps
+ros2 launch hexapod_gz spawn_robot_step.launch.py step_duration:=3.0
+
+# 10 second steps
+ros2 launch hexapod_gz spawn_robot_step.launch.py step_duration:=10.0
+```
+
+## Custom PD Gains
+
+```bash
+ros2 launch hexapod_gz spawn_robot_step.launch.py \
+    kp_rev1:=10.0 kd_rev1:=1.0 \
+    kp_rev2:=8.0 kd_rev2:=0.8
+```
+
+## PlotJuggler Topics
+
+**Must Plot:**
+- `/joint_reference/data[0]` - Step reference for rev1
+- `/joint_states/position[0]` - Actual position for rev1
+- `/joint_effort_controller/commands/data[0]` - Torque for rev1
+
+**Look For:**
+- Rise time (how fast it reaches target)
+- Overshoot (if it goes past target)
+- Settling time (how long to stabilize)
+- Oscillations (if under-damped)
+
+## Tuning Tips
+
+**Too much overshoot?**
+```bash
+# Increase Kd
+ros2 launch hexapod_gz spawn_robot_step.launch.py kd_rev1:=1.0
+```
+
+**Too slow?**
+```bash
+# Increase Kp
+ros2 launch hexapod_gz spawn_robot_step.launch.py kp_rev1:=10.0
+```
+
+**Oscillating?**
+```bash
+# Increase Kd more
+ros2 launch hexapod_gz spawn_robot_step.launch.py kd_rev1:=2.0
+```
+
+## Switch Back to Sine Wave
+
+```bash
+ros2 launch hexapod_gz spawn_robot_pd.launch.py
+```
+
+---
+**Perfect for testing step response and tuning PD controller!** ⚡

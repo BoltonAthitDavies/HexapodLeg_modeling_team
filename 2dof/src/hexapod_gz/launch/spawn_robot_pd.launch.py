@@ -128,10 +128,10 @@ def generate_launch_description():
         output="screen",
     )
 
-    # Load joint position controller
-    load_joint_position_controller = ExecuteProcess(
+    # Load joint effort controller
+    load_joint_effort_controller = ExecuteProcess(
         cmd=["ros2", "control", "load_controller", "--set-state", "active",
-             "joint_position_controller"],
+             "joint_effort_controller"],
         output="screen",
     )
 
@@ -143,10 +143,10 @@ def generate_launch_description():
         )
     )
 
-    delay_joint_position_controller_after_joint_state_broadcaster = RegisterEventHandler(
+    delay_joint_effort_controller_after_joint_state_broadcaster = RegisterEventHandler(
         event_handler=OnProcessExit(
             target_action=load_joint_state_broadcaster,
-            on_exit=[load_joint_position_controller],
+            on_exit=[load_joint_effort_controller],
         )
     )
 
@@ -167,22 +167,12 @@ def generate_launch_description():
         condition=IfCondition(use_pd),
     )
 
-    # Simple Joint Position Commander (for comparison)
-    simple_commander_node = Node(
-        package="hexapod_gz",
-        executable="joint_position_commander",
-        name="joint_position_commander",
-        output="screen",
-        parameters=[{"use_sim_time": use_sim_time}],
-        condition=IfCondition(LaunchConfiguration("use_pd_controller", default="false")),
-    )
-
     nodes = [
         robot_state_publisher_node,
         gazebo,
         spawn_entity,
         delay_joint_state_broadcaster_after_spawn,
-        delay_joint_position_controller_after_joint_state_broadcaster,
+        delay_joint_effort_controller_after_joint_state_broadcaster,
         pd_commander_node,
     ]
 
