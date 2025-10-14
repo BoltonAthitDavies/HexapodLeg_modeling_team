@@ -112,7 +112,7 @@
     <axis
       xyz="0 0 1" />
     <limit lower="0.0" upper="6.28" effort="10.0" velocity="10.0"/>
-    <dynamics damping="0.1" friction="0.1"/>
+    <dynamics damping="0.07" friction="0.1"/>
   </joint>
   <link
     name="Link_2">
@@ -167,7 +167,7 @@
     <axis
       xyz="0 0 1" />
     <limit lower="-1.47" upper="3.0" effort="10.0" velocity="10.0"/>
-    <dynamics damping="0.1" friction="0.1"/>
+    <dynamics damping="0.07" friction="0.1"/>
   </joint>
 
   <!-- Gazebo-specific visual and collision for base_link -->

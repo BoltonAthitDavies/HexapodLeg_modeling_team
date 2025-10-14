@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/hexapod_gz/hexapod_gz.egg-info/PKG-INFO
+writing dependency_links to ../../build/hexapod_gz/hexapod_gz.egg-info/dependency_links.txt
+writing entry points to ../../build/hexapod_gz/hexapod_gz.egg-info/entry_points.txt
+writing requirements to ../../build/hexapod_gz/hexapod_gz.egg-info/requires.txt
+writing top-level names to ../../build/hexapod_gz/hexapod_gz.egg-info/top_level.txt
+reading manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+writing manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+running build
+running build_py
+copying hexapod_gz/pd_position_commander.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build/lib/hexapod_gz
+running install
+running install_lib
+copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build/lib/hexapod_gz/pd_position_commander.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz
+byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz/pd_position_commander.py to pd_position_commander.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/hexapod_gz/hexapod_gz.egg-info to /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info
+running install_scripts
+Installing pd_position_commander script to /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz
+Installing pd_step_commander script to /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz
+writing list of installed files to '/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log'

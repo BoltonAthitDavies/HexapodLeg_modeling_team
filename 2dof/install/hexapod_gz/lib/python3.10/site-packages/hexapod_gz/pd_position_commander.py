@@ -17,13 +17,15 @@ from hexapod_gz.PD_Controller import PDController
 
 class PDPositionCommander(Node):
     def __init__(self):
-        super().__init__('pd_torque_controller')
+        super().__init__('pd_sinewave_controller')
         
         # Declare parameters
         self.declare_parameter('kp_rev1', 5.0)
-        self.declare_parameter('kd_rev1', 0.5)
+        # self.declare_parameter('kd_rev1', 0.5)
+        self.declare_parameter('kd_rev1', 0.01)
         self.declare_parameter('kp_rev2', 4.0)
-        self.declare_parameter('kd_rev2', 0.4)
+        # self.declare_parameter('kd_rev2', 0.4)
+        self.declare_parameter('kd_rev2', 0.01)
         self.declare_parameter('update_rate', 200.0)  # Match controller_manager rate
         
         # Get parameters

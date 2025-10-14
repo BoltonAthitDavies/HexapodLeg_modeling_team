@@ -116,7 +116,7 @@ def generate_launch_description():
             "-name", "hexapod_robot",
             "-x", "0.0",
             "-y", "0.0",
-            "-z", "1.1",  # Platform height (1.0) + clearance (0.1)
+            "-z", "1.0",  # Platform height (1.0) + clearance (0.1)
         ],
         output="screen",
     )

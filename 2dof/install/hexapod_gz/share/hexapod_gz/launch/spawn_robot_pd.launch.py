@@ -116,7 +116,7 @@ def generate_launch_description():
             "-name", "hexapod_robot",
             "-x", "0.0",
             "-y", "0.0",
-            "-z", "1.1",  # Platform height (1.0) + clearance (0.1)
+            "-z", "1.0",  # Platform height (1.0) + clearance (0.1)
         ],
         output="screen",
     )
@@ -154,7 +154,7 @@ def generate_launch_description():
     pd_commander_node = Node(
         package="hexapod_gz",
         executable="pd_position_commander",
-        name="pd_position_commander",
+        name="pd_sinewave_controller",
         output="screen",
         parameters=[{
             "use_sim_time": use_sim_time,

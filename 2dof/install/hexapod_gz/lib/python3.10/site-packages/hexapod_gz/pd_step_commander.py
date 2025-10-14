@@ -21,9 +21,9 @@ class PDStepCommander(Node):
         
         # Declare parameters
         self.declare_parameter('kp_rev1', 5.0)
-        self.declare_parameter('kd_rev1', 0.5)
+        self.declare_parameter('kd_rev1', 0.01)
         self.declare_parameter('kp_rev2', 4.0)
-        self.declare_parameter('kd_rev2', 0.4)
+        self.declare_parameter('kd_rev2', 0.01)
         self.declare_parameter('update_rate', 200.0)  # Match controller_manager rate
         self.declare_parameter('step_duration', 5.0)  # Duration of each step in seconds
         
@@ -73,10 +73,11 @@ class PDStepCommander(Node):
         
         # Step function parameters
         # Define step positions within joint limits
-        # rev1: [0, 6.28], rev_2: [-1.47, 3.0]
-        self.rev1_steps = [2.0, 4.5, 1.5, 5.0, 3.14]  # Different positions
-        self.rev2_steps = [0.0, 0.0, 0.0, 0.0, 0.0]  # Different positions
-        # self.rev2_steps = [-0.5, 1.5, 0.0, 2.0, 0.765]  # Different positions
+
+        # self.rev1_steps = [0.0, 0.0, 0.0, 0.0, 0.0]  # Different positions
+        self.rev1_steps = [0.0, 0.0, 0.0, 0.0,2.0, 4.5, 1.5, 5.0, 3.14]  # Different positions
+        # self.rev2_steps = [0.0, 0.0, 0.0, 0.0, 0.0]  # Different positions
+        self.rev2_steps = [0.0, 0.0, 0.0, 0.0,-0.5, 1.5, 0.0, 2.0, 0.765]  # Different positions
         self.current_step_index = 0
         self.time_in_step = 0.0
         
@@ -122,6 +123,11 @@ class PDStepCommander(Node):
             self.get_logger().info(f'Step {self.current_step_index + 1}/{len(self.rev1_steps)}: '
                                    f'rev1={self.rev1_steps[self.current_step_index]:.2f}, '
                                    f'rev2={self.rev2_steps[self.current_step_index]:.2f}')
+            # Publish position commands to 0
+            cmd_msg = Float64MultiArray()
+            cmd_msg.data = [0.0, 0.0]
+            self.effort_pub.publish(cmd_msg)
+
         
         # Reference trajectory (step function)
         ref_pos_rev1 = self.rev1_steps[self.current_step_index]
@@ -132,7 +138,7 @@ class PDStepCommander(Node):
         
         # Publish reference trajectory (for visualization in PlotJuggler)
         ref_msg = Float64MultiArray()
-        ref_msg.data = [ref_pos_rev1, ref_pos_rev2]
+        ref_msg.data = [ref_pos_rev1, ref_pos_rev2, ref_vel_rev1, ref_vel_rev2]
         self.reference_pub.publish(ref_msg)
         
         # Use PD controller to compute torque commands based on control diagram
