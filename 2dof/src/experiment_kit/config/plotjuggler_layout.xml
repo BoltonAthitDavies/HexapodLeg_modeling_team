@@ -1,0 +1,51 @@
+{
+  "Main Window": {
+    "geometry": [0, 0, 1600, 900],
+    "state": "AAAA/wAAAAD9AAAAAgAAAAAAAAL8AAADh/wCAAAAAvsAAAAOAEQAYQB0AGEATABvAGEAZABlAHIBAAABRwAAAHEAAABUAP////sAAAAMAFQAbwBvAGwAQgBvAHgBAAABuAAAAw0AAAA0AP///wAAAAEAAAIFAAADh/wCAAAAA/sAAAAYAEMAdQByAHMAbwByAFAAbwBzAGkAdABpAG8AbgEAAAAqAAAAGQAAABkA////+wAAABQAUABsAG8AdAAgAE0AYQBuAGEAZwBlAHIBAAAAQwAAA4cAAAFQAP////sAAAAeAE0AZQBzAHMAYQBnAGUAcwAgAFYAaQBlAHcAZQByAQAABNAAAAAAAAAAAAAAAAAA//wAAAEsAAADhwAAAAQA////+gAAAAACAAAAA/sAAAAMAFAAbABvAHQAIAAwAQAAAAD/////AAAAAAAAAAD7AAAADABQAGwAbwB0ACAAMQEAAAAA/////wAAAAAAAAAAAAAAAvsAAAAMAFAAbABvAHQAIAAyAQAAAAD/////AAAAAAAAAAD7AAAADABQAGwAbwB0ACAAMwEAAAAA/////wAAAAAAAAAAAAAAAAAAAfsAAAOMAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAA==",
+    "plot_layout_type": "Stacked"
+  },
+  "Plots": [
+    {
+      "name": "Plot 0",
+      "title": "Joint Positions",
+      "curves": [
+        {
+          "name": "/joint_states/position[0]",
+          "color": "#1f77b4"
+        },
+        {
+          "name": "/joint_states/position[1]",
+          "color": "#ff7f0e"
+        }
+      ]
+    },
+    {
+      "name": "Plot 1",
+      "title": "Joint Velocities",
+      "curves": [
+        {
+          "name": "/joint_states/velocity[0]",
+          "color": "#2ca02c"
+        },
+        {
+          "name": "/joint_states/velocity[1]",
+          "color": "#d62728"
+        }
+      ]
+    },
+    {
+      "name": "Plot 2",
+      "title": "Joint Commands",
+      "curves": [
+        {
+          "name": "/joint_position_controller/commands/data[0]",
+          "color": "#9467bd"
+        },
+        {
+          "name": "/joint_position_controller/commands/data[1]",
+          "color": "#8c564b"
+        }
+      ]
+    }
+  ]
+}

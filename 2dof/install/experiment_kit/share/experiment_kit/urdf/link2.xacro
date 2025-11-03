@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Link_2 macro for experiment_kit hexapod robot -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="link2_module">
+  
+  <!-- Xacro property for mesh directory -->
+  <xacro:property name="mesh_dir" value="$(find experiment_kit)/meshes"/>
+  
+  <!-- Usage:
+       <xacro:add_link2 parent:="Link1" prefix:="" />
+       Creates Link_2 with STL mesh from SolidWorks export
+       Joint rotates about Z-axis at position (-0.079154, 0.062411, 0.0045) relative to parent
+       with rotation (rpy="-1.5708 0 -0.51329")
+  -->
+  <xacro:macro name="add_link2" params="parent:=Link1 prefix:=''">
+    
+    <link name="${prefix}Link_2">
+      <inertial>
+        <origin
+          xyz="-0.083742489817431 0.0327173729912947 -0.00566198040215334"
+          rpy="0 0 0" />
+        <mass value="0.06148945526761" />
+        <inertia
+          ixx="4.23798761409314E-05"
+          ixy="6.62517483598623E-05"
+          ixz="-3.11291621476589E-05"
+          iyy="0.000179685952658823"
+          iyz="1.25707570641167E-05"
+          izz="0.000201844688473023" />
+      </inertial>
+      
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://${mesh_dir}/Link_2.STL" />
+        </geometry>
+        <material name="">
+          <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+        </material>
+      </visual>
+      
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://${mesh_dir}/Link_2.STL" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${prefix}rev_2" type="revolute">
+      <origin xyz="-0.079154 0.062411 0.0045" rpy="-1.5708 0 -0.51329" />
+      <parent link="${parent}" />
+      <child link="${prefix}Link_2" />
+      <axis xyz="0 0 1" />
+      <limit lower="-1.47" upper="3.0" effort="10.0" velocity="10.0"/>
+      <dynamics damping="0.07" friction="0.1"/>
+    </joint>
+    
+    <!-- Gazebo-specific visual for Link_2 -->
+    <gazebo reference="${prefix}Link_2">
+      <visual>
+        <geometry>
+          <cylinder>
+            <radius>0.015</radius>
+            <length>0.12</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.8 0.2 0.2 1</ambient>
+          <diffuse>0.8 0.2 0.2 1</diffuse>
+        </material>
+      </visual>
+    </gazebo>
+    
+  </xacro:macro>
+</robot>

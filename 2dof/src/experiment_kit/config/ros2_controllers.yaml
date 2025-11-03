@@ -1,0 +1,22 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 200  # Hz - Increased for faster response
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    joint_effort_controller:
+      type: effort_controllers/JointGroupEffortController
+
+joint_effort_controller:
+  ros__parameters:
+    joints:
+      - rev1
+      - rev_2
+    
+    command_interfaces:
+      - effort
+    
+    state_interfaces:
+      - position
+      - velocity

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Link1 standalone robot for experiment_kit hexapod robot -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="link1_robot">
+  
+  <!-- Xacro property for mesh directory -->
+  <xacro:property name="mesh_dir" value="$(find experiment_kit)/meshes"/>
+  
+  <!-- World link - fixed reference frame -->
+  <link name="world"/>
+
+  <!-- Base link -->
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.51899810539991E-08 -0.00018233484030792 0.0202811700296596"
+        rpy="0 0 0" />
+      <mass value="0.293447721104022" />
+      <inertia
+        ixx="0.000207699550833952"
+        ixy="-4.2443665565616E-10"
+        ixz="4.5246001720839E-11"
+        iyy="0.000209742516484443"
+        iyz="1.07817317605787E-06"
+        izz="0.000367285854394419" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file://${mesh_dir}/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file://${mesh_dir}/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Fixed joint to lock base_link to world -->
+  <joint name="world_fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Gazebo-specific visual for base_link -->
+  <gazebo reference="base_link">
+    <visual>
+      <geometry>
+        <box>
+          <size>0.08 0.08 0.05</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.2 0.2 0.8 1</ambient>
+        <diffuse>0.2 0.2 0.8 1</diffuse>
+      </material>
+    </visual>
+  </gazebo>
+
+  <!-- Link1 definition -->
+  <xacro:macro name="add_link1" params="parent:=base_link prefix:=''">
+    
+    <link name="${prefix}Link1">
+      <inertial>
+        <origin
+          xyz="-0.0744903369422905 0.0426388780495075 0.00559405457409265"
+          rpy="0 0 0" />
+        <mass value="0.216695042917165" />
+        <inertia
+          ixx="0.000130440591615854"
+          ixy="5.70003393072442E-05"
+          ixz="1.47989875138492E-06"
+          iyy="0.000175918627847008"
+          iyz="-1.28953663827065E-06"
+          izz="0.000157070086725617" />
+      </inertial>
+      
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://${mesh_dir}/Link1.STL" />
+        </geometry>
+        <material name="">
+          <color rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+        </material>
+      </visual>
+      
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="file://${mesh_dir}/Link1.STL" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${prefix}rev1" type="revolute">
+      <origin xyz="0 0 0.0542" rpy="0 0 0" />
+      <parent link="${parent}" />
+      <child link="${prefix}Link1" />
+      <axis xyz="0 0 1" />
+      <limit lower="0.0" upper="6.28" effort="10.0" velocity="10.0"/>
+      <dynamics damping="0.07" friction="0.1"/>
+    </joint>
+    
+    <!-- Gazebo-specific visual for Link1 -->
+    <gazebo reference="${prefix}Link1">
+      <visual>
+        <geometry>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.15</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.3 0.3 0.3 1</diffuse>
+        </material>
+      </visual>
+    </gazebo>
+    
+  </xacro:macro>
+
+  <!-- Instantiate Link1 -->
+  <xacro:add_link1 parent="base_link" prefix=""/>
+
+  <!-- ros2_control -->
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>ign_ros2_control/IgnitionSystem</plugin>
+    </hardware>
+    
+    <joint name="rev1">
+      <command_interface name="effort">
+        <param name="min">-10.0</param>
+        <param name="max">10.0</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+  </ros2_control>
+
+  <!-- Gazebo ros2_control plugin -->
+  <gazebo>
+    <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+      <parameters>$(find experiment_kit)/config/ros2_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+</robot>
