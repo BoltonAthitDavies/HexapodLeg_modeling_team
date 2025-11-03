@@ -220,7 +220,7 @@
   <!-- ros2_control -->
   <ros2_control name="GazeboSystem" type="system">
     <hardware>
-      <plugin>ign_ros2_control/IgnitionSystem</plugin>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
     </hardware>
     
     <joint name="rev1">
@@ -246,7 +246,7 @@
 
   <!-- Gazebo ros2_control plugin -->
   <gazebo>
-    <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
       <parameters>$(find hexapod_gz)/config/ros2_controllers.yaml</parameters>
     </plugin>
   </gazebo>
