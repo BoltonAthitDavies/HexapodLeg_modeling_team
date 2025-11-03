@@ -3,11 +3,11 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"
-  name="experiment_kit">
+  name="hexapod_gz">
 
   <!-- Xacro defaults -->
-  <xacro:property name="mesh_dir" value="$(find experiment_kit)/meshes"/>
-  <!-- You can override e.g., ros2 run xacro xacro experiment_kit.xacro mesh_dir:=package://my_pkg/meshes -->
+  <xacro:property name="mesh_dir" value="$(find hexapod_gz)/meshes"/>
+  <!-- You can override e.g., ros2 run xacro xacro hexapod_gz.xacro mesh_dir:=package://my_pkg/meshes -->
 
   <!-- World link - fixed reference frame -->
   <link name="world"/>
@@ -41,7 +41,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find experiment_kit)/meshes/base_link.STL" />
+          filename="file://$(find hexapod_gz)/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -55,7 +55,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find experiment_kit)/meshes/base_link.STL" />
+          filename="file://$(find hexapod_gz)/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -81,7 +81,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find experiment_kit)/meshes/Link1.STL" />
+          filename="file://$(find hexapod_gz)/meshes/Link1.STL" />
       </geometry>
       <material
         name="">
@@ -95,7 +95,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find experiment_kit)/meshes/Link1.STL" />
+          filename="file://$(find hexapod_gz)/meshes/Link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -220,7 +220,7 @@
   <!-- ros2_control -->
   <ros2_control name="GazeboSystem" type="system">
     <hardware>
-      <plugin>ign_ros2_control/IgnitionSystem</plugin>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
     </hardware>
     
     <joint name="rev1">
@@ -246,8 +246,8 @@
 
   <!-- Gazebo ros2_control plugin -->
   <gazebo>
-    <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
-      <parameters>$(find experiment_kit)/config/ros2_controllers.yaml</parameters>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(find hexapod_gz)/config/ros2_controllers.yaml</parameters>
     </plugin>
   </gazebo>
 

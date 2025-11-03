@@ -1,0 +1,69 @@
+[0.755s] Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/experiment_kit': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/experiment_kit build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/install.log --single-version-externally-managed install_data
+[0.980s] running egg_info
+[0.981s] creating ../../build/experiment_kit/experiment_kit.egg-info
+[0.981s] writing ../../build/experiment_kit/experiment_kit.egg-info/PKG-INFO
+[0.981s] writing dependency_links to ../../build/experiment_kit/experiment_kit.egg-info/dependency_links.txt
+[0.981s] writing entry points to ../../build/experiment_kit/experiment_kit.egg-info/entry_points.txt
+[0.981s] writing requirements to ../../build/experiment_kit/experiment_kit.egg-info/requires.txt
+[0.981s] writing top-level names to ../../build/experiment_kit/experiment_kit.egg-info/top_level.txt
+[0.981s] writing manifest file '../../build/experiment_kit/experiment_kit.egg-info/SOURCES.txt'
+[0.982s] reading manifest file '../../build/experiment_kit/experiment_kit.egg-info/SOURCES.txt'
+[0.983s] writing manifest file '../../build/experiment_kit/experiment_kit.egg-info/SOURCES.txt'
+[0.983s] running build
+[0.983s] running build_py
+[0.983s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build
+[0.984s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib
+[0.984s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit
+[0.984s] copying experiment_kit/PD_Controller.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit
+[0.984s] copying experiment_kit/__init__.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit
+[0.984s] copying experiment_kit/pd_step_commander_link2.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit
+[0.984s] copying experiment_kit/pd_step_commander.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit
+[0.984s] copying experiment_kit/pd_step_commander_link1.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit
+[0.984s] running install
+[0.984s] running install_lib
+[0.985s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit
+[0.985s] copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit/PD_Controller.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit
+[0.985s] copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit/__init__.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit
+[0.985s] copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit/pd_step_commander_link2.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit
+[0.985s] copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit/pd_step_commander.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit
+[0.985s] copying /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build/lib/experiment_kit/pd_step_commander_link1.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit
+[0.985s] byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit/PD_Controller.py to PD_Controller.cpython-310.pyc
+[0.986s] byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit/__init__.py to __init__.cpython-310.pyc
+[0.986s] byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit/pd_step_commander_link2.py to pd_step_commander_link2.cpython-310.pyc
+[0.987s] byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit/pd_step_commander.py to pd_step_commander.cpython-310.pyc
+[0.988s] byte-compiling /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit/pd_step_commander_link1.py to pd_step_commander_link1.cpython-310.pyc
+[0.989s] running install_data
+[0.989s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/ament_index
+[0.989s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/ament_index/resource_index
+[0.989s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/ament_index/resource_index/packages
+[0.989s] copying resource/experiment_kit -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/ament_index/resource_index/packages
+[0.989s] copying package.xml -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit
+[0.990s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/launch
+[0.990s] copying launch/spawn_robot_step.launch.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/launch
+[0.991s] copying launch/spawn_robot_step_link1.launch.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/launch
+[0.991s] copying launch/spawn_robot_step_link2.launch.py -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/launch
+[0.991s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/config
+[0.991s] copying config/ros2_controllers.yaml -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/config
+[0.991s] copying config/ros2_controllers_link1.yaml -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/config
+[0.991s] copying config/ros2_controllers_link2.yaml -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/config
+[0.991s] copying config/plotjuggler_layout.xml -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/config
+[0.991s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/urdf
+[0.991s] copying urdf/hexapod_modelling_team.xacro -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/urdf
+[0.992s] copying urdf/link1.xacro -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/urdf
+[0.992s] copying urdf/link2.xacro -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/urdf
+[0.992s] copying urdf/link1_vertical.xacro -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/urdf
+[0.992s] copying urdf/link2_vertical.xacro -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/urdf
+[0.992s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/worlds
+[0.992s] copying worlds/hexapod.sdf -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/worlds
+[0.992s] creating /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/meshes
+[0.992s] copying meshes/base_link.STL -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/meshes
+[0.992s] copying meshes/Link1.STL -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/meshes
+[0.993s] copying meshes/Link_2.STL -> /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/meshes
+[0.993s] running install_egg_info
+[0.994s] Copying ../../build/experiment_kit/experiment_kit.egg-info to /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages/experiment_kit-0.1.0-py3.10.egg-info
+[0.994s] running install_scripts
+[1.010s] Installing pd_position_commander script to /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/experiment_kit
+[1.010s] Installing pd_step_commander script to /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/experiment_kit
+[1.010s] Installing pd_step_commander_link1 script to /home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/experiment_kit
+[1.010s] writing list of installed files to '/home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/install.log'
+[1.032s] Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/experiment_kit' returned '0': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/experiment_kit build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/install.log --single-version-externally-managed install_data
