@@ -26,6 +26,7 @@ setup(
             'pd_position_commander = experiment_kit.pd_position_commander:main',
             'pd_step_commander = experiment_kit.pd_step_commander:main',
             'pd_step_commander_link1 = experiment_kit.pd_step_commander_link1:main',
+            'pd_step_commander_link2 = experiment_kit.pd_step_commander_link2:main',
         ],
     },
 )

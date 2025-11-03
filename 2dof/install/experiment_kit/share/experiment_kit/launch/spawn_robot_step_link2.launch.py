@@ -121,17 +121,18 @@ def generate_launch_description():
         output="screen",
     )
 
-    # Load joint state broadcaster
-    load_joint_state_broadcaster = ExecuteProcess(
-        cmd=["ros2", "control", "load_controller", "--set-state", "active",
-             "joint_state_broadcaster"],
+    # Use spawner nodes instead of ExecuteProcess - spawner waits for controller_manager service
+    load_joint_state_broadcaster = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
         output="screen",
     )
 
-    # Load joint effort controller
-    load_joint_effort_controller = ExecuteProcess(
-        cmd=["ros2", "control", "load_controller", "--set-state", "active",
-             "joint_effort_controller"],
+    load_joint_effort_controller = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_effort_controller", "--controller-manager", "/controller_manager"],
         output="screen",
     )
 
@@ -150,11 +151,11 @@ def generate_launch_description():
         )
     )
 
-    # PD Step Commander Node
+    # PD Step Commander Node for Link2
     pd_step_commander_node = Node(
         package="experiment_kit",
-        executable="pd_step_commander",
-        name="pd_step_controller",
+        executable="pd_step_commander_link2",
+        name="pd_step_controller_link2",
         output="screen",
         parameters=[{
             "use_sim_time": use_sim_time,

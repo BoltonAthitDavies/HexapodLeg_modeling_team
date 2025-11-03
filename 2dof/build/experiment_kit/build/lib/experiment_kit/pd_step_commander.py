@@ -1,180 +1,194 @@
 #!/usr/bin/env python3
-import os
-from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, ExecuteProcess, RegisterEventHandler
-from launch.conditions import IfCondition
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
-from launch_ros.actions import Node
-from launch_ros.substitutions import FindPackageShare
-from launch_ros.parameter_descriptions import ParameterValue
-from launch.event_handlers import OnProcessExit
+"""
+PD Step Commander for Hexapod Robot
+Uses PD control with step function trajectory for testing step response
+Implements the control diagram: Torque = Kp*(angle_error) + Kd*(velocity_error) + t_ref
+"""
+import math
+from typing import List
+
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import JointState
+from std_msgs.msg import Float64MultiArray
+
+from experiment_kit.PD_Controller import PDController
 
 
-def generate_launch_description():
-    # Declare arguments
-    declared_arguments = []
-    declared_arguments.append(
-        DeclareLaunchArgument(
-            "gui",
-            default_value="true",
-            description="Start Gazebo with GUI",
+class PDStepCommander(Node):
+    def __init__(self):
+        super().__init__('pd_step_controller')
+        
+        # Declare parameters
+        self.declare_parameter('kp_rev1', 5.0)
+        self.declare_parameter('kd_rev1', 0.01)
+        self.declare_parameter('kp_rev2', 4.0)
+        self.declare_parameter('kd_rev2', 0.01)
+        self.declare_parameter('update_rate', 200.0)  # Match controller_manager rate
+        self.declare_parameter('step_duration', 5.0)  # Duration of each step in seconds
+        
+        # Get parameters
+        kp_rev1 = self.get_parameter('kp_rev1').value
+        kd_rev1 = self.get_parameter('kd_rev1').value
+        kp_rev2 = self.get_parameter('kp_rev2').value
+        kd_rev2 = self.get_parameter('kd_rev2').value
+        update_rate = self.get_parameter('update_rate').value
+        self.step_duration = self.get_parameter('step_duration').value
+        
+        # Create PD controllers
+        self.pd_rev1 = PDController(Kp=kp_rev1, Kd=kd_rev1)
+        self.pd_rev2 = PDController(Kp=kp_rev2, Kd=kd_rev2)
+        
+        # Publisher for torque/effort commands (actual commands sent to controller)
+        self.effort_pub = self.create_publisher(
+            Float64MultiArray,
+            '/joint_effort_controller/commands',
+            10
         )
-    )
-    declared_arguments.append(
-        DeclareLaunchArgument(
-            "use_sim_time",
-            default_value="true",
-            description="Use simulation time",
+        
+        # Publisher for reference trajectory (for visualization)
+        self.reference_pub = self.create_publisher(
+            Float64MultiArray,
+            '/joint_reference',
+            10
         )
-    )
-    declared_arguments.append(
-        DeclareLaunchArgument(
-            "kp_rev1",
-            default_value="5.0",
-            description="Proportional gain for rev1 joint",
+        
+        # Subscriber for joint states
+        self.joint_state_sub = self.create_subscription(
+            JointState,
+            '/joint_states',
+            self.joint_state_callback,
+            10
         )
-    )
-    declared_arguments.append(
-        DeclareLaunchArgument(
-            "kd_rev1",
-            default_value="0.5",
-            description="Derivative gain for rev1 joint",
-        )
-    )
-    declared_arguments.append(
-        DeclareLaunchArgument(
-            "kp_rev2",
-            default_value="4.0",
-            description="Proportional gain for rev_2 joint",
-        )
-    )
-    declared_arguments.append(
-        DeclareLaunchArgument(
-            "kd_rev2",
-            default_value="0.4",
-            description="Derivative gain for rev_2 joint",
-        )
-    )
-    declared_arguments.append(
-        DeclareLaunchArgument(
-            "step_duration",
-            default_value="5.0",
-            description="Duration of each step in seconds",
-        )
-    )
+        
+        # State tracking
+        self.current_positions = [0.0, 0.0]
+        self.current_velocities = [0.0, 0.0]
+        self.previous_positions = [0.0, 0.0]
+        self.has_joint_state = False
+        
+        # Trajectory generation
+        self.t = 0.0
+        self.dt = 1.0 / update_rate
+        
+        # Step function parameters
+        # Define step positions within joint limits
 
-    # Initialize Arguments
-    gui = LaunchConfiguration("gui")
-    use_sim_time = LaunchConfiguration("use_sim_time")
-    kp_rev1 = LaunchConfiguration("kp_rev1")
-    kd_rev1 = LaunchConfiguration("kd_rev1")
-    kp_rev2 = LaunchConfiguration("kp_rev2")
-    kd_rev2 = LaunchConfiguration("kd_rev2")
-    step_duration = LaunchConfiguration("step_duration")
-
-    # Get URDF via xacro
-    pkg_hexapod_gz = FindPackageShare('hexapod_gz')
+        # self.rev1_steps = [0.0, 0.0, 0.0, 0.0, 0.0]  # Different positions
+        self.rev1_steps = [0.0, 0.0, 0.0, 0.0,2.0, 4.5, 1.5, 5.0, 3.14]  # Different positions
+        # self.rev2_steps = [0.0, 0.0, 0.0, 0.0, 0.0]  # Different positions
+        self.rev2_steps = [0.0, 0.0, 0.0, 0.0,-0.5, 1.5, 0.0, 2.0, 0.765]  # Different positions
+        self.current_step_index = 0
+        self.time_in_step = 0.0
+        
+        # Control timer
+        self.timer = self.create_timer(self.dt, self.control_loop)
+        
+        self.get_logger().info(f'PD Step Controller started')
+        self.get_logger().info(f'  Control mode: Torque (Effort) with Step Function trajectory')
+        self.get_logger().info(f'  rev1: Kp={kp_rev1}, Kd={kd_rev1}')
+        self.get_logger().info(f'  rev2: Kp={kp_rev2}, Kd={kd_rev2}')
+        self.get_logger().info(f'  Update rate: {update_rate} Hz')
+        self.get_logger().info(f'  Step duration: {self.step_duration} seconds')
+        self.get_logger().info(f'  Total steps: {len(self.rev1_steps)}')
     
-    robot_description_content = Command(
-        [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
-            " ",
-            PathJoinSubstitution([pkg_hexapod_gz, "urdf", "hexapod_modelling_team.xacro"]),
-        ]
-    )
+    def joint_state_callback(self, msg: JointState):
+        """Receive current joint states"""
+        try:
+            idx_rev1 = msg.name.index('rev1')
+            idx_rev2 = msg.name.index('rev_2')
+            
+            self.previous_positions = self.current_positions.copy()
+            self.current_positions[0] = msg.position[idx_rev1]
+            self.current_positions[1] = msg.position[idx_rev2]
+            
+            self.current_velocities[0] = msg.velocity[idx_rev1]
+            self.current_velocities[1] = msg.velocity[idx_rev2]
+            
+            self.has_joint_state = True
+            
+        except (ValueError, IndexError):
+            pass
     
-    robot_description = {"robot_description": ParameterValue(robot_description_content, value_type=str)}
+    def control_loop(self):
+        """Generate step function trajectory and compute torque commands using PD control"""
+        
+        # Update time in current step
+        self.time_in_step += self.dt
+        
+        # Check if we need to move to next step
+        if self.time_in_step >= self.step_duration:
+            self.time_in_step = 0.0
+            self.current_step_index = (self.current_step_index + 1) % len(self.rev1_steps)
+            self.get_logger().info(f'Step {self.current_step_index + 1}/{len(self.rev1_steps)}: '
+                                   f'rev1={self.rev1_steps[self.current_step_index]:.2f}, '
+                                   f'rev2={self.rev2_steps[self.current_step_index]:.2f}')
+            # Publish position commands to 0
+            cmd_msg = Float64MultiArray()
+            cmd_msg.data = [0.0, 0.0]
+            self.effort_pub.publish(cmd_msg)
 
-    # Robot State Publisher Node
-    robot_state_publisher_node = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        output="both",
-        parameters=[robot_description, {"use_sim_time": use_sim_time}],
-    )
+        
+        # Reference trajectory (step function)
+        ref_pos_rev1 = self.rev1_steps[self.current_step_index]
+        ref_vel_rev1 = 0.5 
+        
+        ref_pos_rev2 = self.rev2_steps[self.current_step_index]
+        ref_vel_rev2 = 0.5 
+        
+        # Publish reference trajectory (for visualization in PlotJuggler)
+        ref_msg = Float64MultiArray()
+        ref_msg.data = [ref_pos_rev1, ref_pos_rev2, ref_vel_rev1, ref_vel_rev2]
+        self.reference_pub.publish(ref_msg)
+        
+        # Use PD controller to compute torque commands based on control diagram
+        if self.has_joint_state:
+            # Compute torque using PD control (as per your control diagram)
+            # Output is TORQUE (Desired torque = Kp * angle_error + Kd * speed_error + t_ref)
+            torque_rev1 = self.pd_rev1.compute_torque(
+                set_angle=ref_pos_rev1,
+                current_angle=self.current_positions[0],
+                set_speed=ref_vel_rev1,
+                current_speed=self.current_velocities[0],
+                t_ref=0.0
+            )
+            
+            torque_rev2 = self.pd_rev2.compute_torque(
+                set_angle=ref_pos_rev2,
+                current_angle=self.current_positions[1],
+                set_speed=ref_vel_rev2,
+                current_speed=self.current_velocities[1],
+                t_ref=0.0
+            )
+            
+            cmd_torque_rev1 = torque_rev1
+            cmd_torque_rev2 = torque_rev2
+        else:
+            # No feedback yet, send zero torque
+            cmd_torque_rev1 = 0.0
+            cmd_torque_rev2 = 0.0
+        
+        # Publish torque/effort commands
+        cmd_msg = Float64MultiArray()
+        cmd_msg.data = [cmd_torque_rev1, cmd_torque_rev2]
+        self.effort_pub.publish(cmd_msg)
+        
+        # Increment time
+        self.t += self.dt
 
-    # Gazebo Sim (Ignition Gazebo)
-    world_file = PathJoinSubstitution([pkg_hexapod_gz, "worlds", "hexapod.sdf"])
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = PDStepCommander()
     
-    gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            [PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])]
-        ),
-        launch_arguments={
-            "gz_args": ["-r ", world_file],
-            "on_exit_shutdown": "true"
-        }.items(),
-    )
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
-    # Spawn the robot on top of the static base (height = 1.0m)
-    spawn_entity = Node(
-        package="ros_gz_sim",
-        executable="create",
-        arguments=[
-            "-topic", "robot_description",
-            "-name", "hexapod_robot",
-            "-x", "0.0",
-            "-y", "0.0",
-            "-z", "1.0",  # Platform height (1.0) + clearance (0.1)
-        ],
-        output="screen",
-    )
 
-    # Use spawner nodes instead of ExecuteProcess - spawner waits for controller_manager service
-    load_joint_state_broadcaster = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
-        output="screen",
-    )
-
-    load_joint_effort_controller = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_effort_controller", "--controller-manager", "/controller_manager"],
-        output="screen",
-    )
-
-    # Delay controller loading until spawn is complete
-    delay_joint_state_broadcaster_after_spawn = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=spawn_entity,
-            on_exit=[load_joint_state_broadcaster],
-        )
-    )
-
-    delay_joint_effort_controller_after_joint_state_broadcaster = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=load_joint_state_broadcaster,
-            on_exit=[load_joint_effort_controller],
-        )
-    )
-
-    # PD Step Commander Node
-    pd_step_commander_node = Node(
-        package="experiment_kit",
-        executable="pd_step_commander",
-        name="pd_step_controller",
-        output="screen",
-        parameters=[{
-            "use_sim_time": use_sim_time,
-            "kp_rev1": kp_rev1,
-            "kd_rev1": kd_rev1,
-            "kp_rev2": kp_rev2,
-            "kd_rev2": kd_rev2,
-            "update_rate": 200.0,
-            "step_duration": step_duration,
-        }],
-    )
-
-    nodes = [
-        robot_state_publisher_node,
-        gazebo,
-        spawn_entity,
-        delay_joint_state_broadcaster_after_spawn,
-        delay_joint_effort_controller_after_joint_state_broadcaster,
-        pd_step_commander_node,
-    ]
-
-    return LaunchDescription(declared_arguments + nodes)
+if __name__ == '__main__':
+    main()

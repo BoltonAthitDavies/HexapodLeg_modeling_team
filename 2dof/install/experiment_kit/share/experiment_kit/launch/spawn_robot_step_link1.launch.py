@@ -121,17 +121,18 @@ def generate_launch_description():
         output="screen",
     )
 
-    # Load joint state broadcaster
-    load_joint_state_broadcaster = ExecuteProcess(
-        cmd=["ros2", "control", "load_controller", "--set-state", "active",
-             "joint_state_broadcaster"],
+    # Use spawner nodes instead of ExecuteProcess - spawner waits for controller_manager service
+    load_joint_state_broadcaster = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
         output="screen",
     )
 
-    # Load joint effort controller
-    load_joint_effort_controller = ExecuteProcess(
-        cmd=["ros2", "control", "load_controller", "--set-state", "active",
-             "joint_effort_controller"],
+    load_joint_effort_controller = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_effort_controller", "--controller-manager", "/controller_manager"],
         output="screen",
     )
 

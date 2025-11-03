@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PD Step Commander for Hexapod Robot
+PD Step Commander for Link1 Only (rev1 joint)
 Uses PD control with step function trajectory for testing step response
 Implements the control diagram: Torque = Kp*(angle_error) + Kd*(velocity_error) + t_ref
 """
@@ -15,7 +15,7 @@ from std_msgs.msg import Float64MultiArray
 from experiment_kit.PD_Controller import PDController
 
 
-class PDStepCommander(Node):
+class PDStepCommanderLink1(Node):
     def __init__(self):
         super().__init__('pd_step_controller_link1')
         
@@ -78,7 +78,7 @@ class PDStepCommander(Node):
         # Control timer
         self.timer = self.create_timer(self.dt, self.control_loop)
         
-        self.get_logger().info(f'PD Step Controller started')
+        self.get_logger().info(f'PD Step Controller Link1 started')
         self.get_logger().info(f'  Control mode: Torque (Effort) with Step Function trajectory')
         self.get_logger().info(f'  rev1: Kp={kp_rev1}, Kd={kd_rev1}')
         self.get_logger().info(f'  Update rate: {update_rate} Hz')
@@ -157,7 +157,7 @@ class PDStepCommander(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = PDStepCommander()
+    node = PDStepCommanderLink1()
     
     try:
         rclpy.spin(node)
