@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cybergear_interfaces/msg/MotorControlGroup.msg
+// generated code does not contain a copyright notice
+
+#include "cybergear_interfaces/msg/MotorControl.idl"
+#include "std_msgs/msg/Header.idl"
+
+module cybergear_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "MotorGroupControl.msg" "\n"
+      "ใช้สำหรับส่งคำสั่งควบคุมมอเตอร์หลายตัวพร้อมกัน" "\n"
+      "รวม header สำหรับข้อมูลเวลาและการ sync คำสั่งด้วย")
+    struct MotorControlGroup {
+      std_msgs::msg::Header header;
+
+      sequence<cybergear_interfaces::msg::MotorControl> motor_controls;
+    };
+  };
+};

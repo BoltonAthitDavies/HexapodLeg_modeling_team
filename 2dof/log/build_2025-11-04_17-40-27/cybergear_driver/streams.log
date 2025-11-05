@@ -1,0 +1,52 @@
+[0.027s] Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver -- -j16 -l16
+[0.567s] [100%] Built target cpp_node_test
+[0.568s] [100%] Built target ament_cmake_python_copy_cybergear_driver
+[0.568s] running egg_info
+[0.568s] writing cybergear_driver.egg-info/PKG-INFO
+[0.568s] writing dependency_links to cybergear_driver.egg-info/dependency_links.txt
+[0.568s] writing top-level names to cybergear_driver.egg-info/top_level.txt
+[0.568s] reading manifest file 'cybergear_driver.egg-info/SOURCES.txt'
+[0.568s] writing manifest file 'cybergear_driver.egg-info/SOURCES.txt'
+[0.568s] [100%] Built target ament_cmake_python_build_cybergear_driver_egg
+[0.579s] Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver -- -j16 -l16
+[0.580s] Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver
+[0.588s] -- Install configuration: ""
+[0.588s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/environment/pythonpath.sh
+[0.588s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/environment/pythonpath.dsv
+[0.588s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver-0.0.0-py3.10.egg-info
+[0.589s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.590s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.590s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver-0.0.0-py3.10.egg-info/top_level.txt
+[0.590s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver-0.0.0-py3.10.egg-info/PKG-INFO
+[0.590s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver
+[0.590s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver/__init__.py
+[0.590s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver/dummy_module.py
+[0.620s] Listing '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/local/lib/python3.10/dist-packages/cybergear_driver'...
+[0.624s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/cybergear_driver.py
+[0.624s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/lock_home_position_control.py
+[0.625s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/lock_home_mit_control.py
+[0.625s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/single_motor_position_control.py
+[0.625s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/scan_motors.py
+[0.625s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/config.py
+[0.625s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/cybergear.py
+[0.625s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/controller.py
+[0.625s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/cybergear_calibration_node.py
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/cybergear_driver/cpp_node_test
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/config
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/config/config.yaml
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/ament_index/resource_index/package_run_dependencies/cybergear_driver
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/ament_index/resource_index/parent_prefix_path/cybergear_driver
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/environment/ament_prefix_path.sh
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/environment/ament_prefix_path.dsv
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/environment/path.sh
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/environment/path.dsv
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/local_setup.bash
+[0.626s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/local_setup.sh
+[0.627s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/local_setup.zsh
+[0.627s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/local_setup.dsv
+[0.627s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.dsv
+[0.627s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/ament_index/resource_index/packages/cybergear_driver
+[0.627s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/cmake/cybergear_driverConfig.cmake
+[0.627s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/cmake/cybergear_driverConfig-version.cmake
+[0.627s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.xml
+[0.629s] Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver

@@ -1,0 +1,392 @@
+[0.078s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.078s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x74538d556230>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74538d6dfaf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74538d6dfaf0>>)
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.241s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ambushee/HexapodLeg_modeling_team/2dof'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_driver) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cybergear_driver' with type 'ros.ament_cmake' and name 'cybergear_driver'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/cybergear_interfaces) by extension 'ros'
+[0.262s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cybergear_interfaces' with type 'ros.ament_cmake' and name 'cybergear_interfaces'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/experiment_kit) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/experiment_kit' with type 'ros.ament_python' and name 'experiment_kit'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/hexapod_gz) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hexapod_gz' with type 'ros.ament_python' and name 'hexapod_gz'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extension 'ros'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extensions ['cmake', 'python']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extension 'cmake'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extension 'python'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extensions ['python_setup_py']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001) by extension 'python_setup_py'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/volta_controller-20251104T082652Z-1-001/volta_controller) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/volta_controller-20251104T082652Z-1-001/volta_controller' with type 'ros.ament_cmake' and name 'volta_controller'
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.284s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/ambushee/HexapodLeg_modeling_team/2dof/install
+[0.284s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ambushee/ros2_ws/install
+[0.286s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 359 installed packages in /opt/ros/humble
+[0.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'cmake_target' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.324s] DEBUG:colcon.colcon_core.verb:Building package 'cybergear_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/2dof/src/cybergear_driver', 'symlink_install': False, 'test_result_base': None}
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'cybergear_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.324s] DEBUG:colcon.colcon_core.verb:Building package 'cybergear_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/2dof/src/cybergear_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'cmake_target' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'cmake_clean_first' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'cmake_force_configure' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'ament_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'experiment_kit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.325s] DEBUG:colcon.colcon_core.verb:Building package 'experiment_kit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/2dof/src/experiment_kit', 'symlink_install': False, 'test_result_base': None}
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_target' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'hexapod_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.325s] DEBUG:colcon.colcon_core.verb:Building package 'hexapod_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz', 'symlink_install': False, 'test_result_base': None}
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'volta_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.326s] DEBUG:colcon.colcon_core.verb:Building package 'volta_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller', 'merge_install': False, 'path': '/home/ambushee/HexapodLeg_modeling_team/2dof/src/volta_controller-20251104T082652Z-1-001/volta_controller', 'symlink_install': False, 'test_result_base': None}
+[0.326s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.327s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.327s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/cybergear_driver' with build type 'ament_cmake'
+[0.328s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/cybergear_driver'
+[0.329s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.333s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/cybergear_interfaces' with build type 'ament_cmake'
+[0.333s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/cybergear_interfaces'
+[0.333s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.333s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.336s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/experiment_kit' with build type 'ament_python'
+[0.336s] Level 1:colcon.colcon_core.shell:create_environment_hook('experiment_kit', 'ament_prefix_path')
+[0.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/hook/ament_prefix_path.ps1'
+[0.337s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/hook/ament_prefix_path.dsv'
+[0.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/hook/ament_prefix_path.sh'
+[0.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.341s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz' with build type 'ament_python'
+[0.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_gz', 'ament_prefix_path')
+[0.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/hook/ament_prefix_path.ps1'
+[0.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/hook/ament_prefix_path.dsv'
+[0.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/hook/ament_prefix_path.sh'
+[0.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.342s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.345s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/volta_controller-20251104T082652Z-1-001/volta_controller' with build type 'ament_cmake'
+[0.345s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/volta_controller-20251104T082652Z-1-001/volta_controller'
+[0.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver -- -j16 -l16
+[0.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces -- -j16 -l16
+[0.614s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/experiment_kit'
+[0.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.886s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz'
+[0.886s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.886s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller -- -j16 -l16
+[0.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces -- -j16 -l16
+[0.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces
+[0.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver -- -j16 -l16
+[0.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver
+[0.956s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cybergear_driver)
+[0.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_driver
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver' for CMake module files
+[0.963s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver' for CMake config files
+[0.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('cybergear_driver', 'cmake_prefix_path')
+[0.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/hook/cmake_prefix_path.ps1'
+[0.963s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/hook/cmake_prefix_path.dsv'
+[0.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/hook/cmake_prefix_path.sh'
+[0.964s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib'
+[0.964s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/bin'
+[0.964s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/pkgconfig/cybergear_driver.pc'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/python3.10/site-packages'
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/bin'
+[0.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.ps1'
+[0.966s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.dsv'
+[0.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.sh'
+[0.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.bash'
+[0.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.zsh'
+[0.968s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/colcon-core/packages/cybergear_driver)
+[0.968s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cybergear_driver)
+[0.968s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver' for CMake module files
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver' for CMake config files
+[0.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('cybergear_driver', 'cmake_prefix_path')
+[0.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/hook/cmake_prefix_path.ps1'
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/hook/cmake_prefix_path.dsv'
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/hook/cmake_prefix_path.sh'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/bin'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/pkgconfig/cybergear_driver.pc'
+[0.971s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/lib/python3.10/site-packages'
+[0.971s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/bin'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.ps1'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.dsv'
+[0.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.sh'
+[0.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.bash'
+[0.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/cybergear_driver/package.zsh'
+[0.973s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_driver/share/colcon-core/packages/cybergear_driver)
+[0.973s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cybergear_interfaces)
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces' for CMake module files
+[0.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces
+[0.975s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces' for CMake config files
+[0.975s] Level 1:colcon.colcon_core.shell:create_environment_hook('cybergear_interfaces', 'cmake_prefix_path')
+[0.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/cmake_prefix_path.ps1'
+[0.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/cmake_prefix_path.dsv'
+[0.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/cmake_prefix_path.sh'
+[0.976s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib'
+[0.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('cybergear_interfaces', 'ld_library_path_lib')
+[0.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/ld_library_path_lib.ps1'
+[0.977s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/ld_library_path_lib.dsv'
+[0.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/ld_library_path_lib.sh'
+[0.977s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/bin'
+[0.977s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/pkgconfig/cybergear_interfaces.pc'
+[0.977s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/python3.10/site-packages'
+[0.978s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/bin'
+[0.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.ps1'
+[0.978s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.dsv'
+[0.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.sh'
+[0.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.bash'
+[0.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.zsh'
+[0.979s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/colcon-core/packages/cybergear_interfaces)
+[0.980s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cybergear_interfaces)
+[0.980s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces' for CMake module files
+[0.980s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces' for CMake config files
+[0.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('cybergear_interfaces', 'cmake_prefix_path')
+[0.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/cmake_prefix_path.ps1'
+[0.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/cmake_prefix_path.dsv'
+[0.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/cmake_prefix_path.sh'
+[0.982s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib'
+[0.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('cybergear_interfaces', 'ld_library_path_lib')
+[0.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/ld_library_path_lib.ps1'
+[0.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/ld_library_path_lib.dsv'
+[0.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/hook/ld_library_path_lib.sh'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/bin'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/pkgconfig/cybergear_interfaces.pc'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/python3.10/site-packages'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/bin'
+[0.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.ps1'
+[0.984s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.dsv'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.sh'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.bash'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.zsh'
+[0.986s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/colcon-core/packages/cybergear_interfaces)
+[1.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller -- -j16 -l16
+[1.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller
+[1.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/experiment_kit': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/experiment_kit build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/install.log --single-version-externally-managed install_data
+[1.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_gz build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log --single-version-externally-managed install_data
+[1.307s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(volta_controller)
+[1.308s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller' for CMake module files
+[1.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/volta_controller
+[1.309s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller' for CMake config files
+[1.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('volta_controller', 'cmake_prefix_path')
+[1.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/hook/cmake_prefix_path.ps1'
+[1.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/hook/cmake_prefix_path.dsv'
+[1.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/hook/cmake_prefix_path.sh'
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/lib'
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/bin'
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/lib/pkgconfig/volta_controller.pc'
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/lib/python3.10/site-packages'
+[1.314s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/bin'
+[1.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.ps1'
+[1.315s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.dsv'
+[1.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.sh'
+[1.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.bash'
+[1.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.zsh'
+[1.317s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/colcon-core/packages/volta_controller)
+[1.318s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(volta_controller)
+[1.319s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller' for CMake module files
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller' for CMake config files
+[1.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('volta_controller', 'cmake_prefix_path')
+[1.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/hook/cmake_prefix_path.ps1'
+[1.321s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/hook/cmake_prefix_path.dsv'
+[1.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/hook/cmake_prefix_path.sh'
+[1.322s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/lib'
+[1.323s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/bin'
+[1.323s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/lib/pkgconfig/volta_controller.pc'
+[1.323s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/lib/python3.10/site-packages'
+[1.324s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/bin'
+[1.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.ps1'
+[1.325s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.dsv'
+[1.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.sh'
+[1.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.bash'
+[1.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/volta_controller/package.zsh'
+[1.328s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/2dof/install/volta_controller/share/colcon-core/packages/volta_controller)
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit' for CMake module files
+[1.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/experiment_kit' returned '0': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/experiment_kit build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/experiment_kit/install.log --single-version-externally-managed install_data
+[1.601s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit' for CMake config files
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib'
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/bin'
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/pkgconfig/experiment_kit.pc'
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/lib/python3.10/site-packages'
+[1.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('experiment_kit', 'pythonpath')
+[1.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/hook/pythonpath.ps1'
+[1.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/hook/pythonpath.dsv'
+[1.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/hook/pythonpath.sh'
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/bin'
+[1.603s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(experiment_kit)
+[1.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/package.ps1'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/package.dsv'
+[1.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/package.sh'
+[1.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/package.bash'
+[1.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/experiment_kit/package.zsh'
+[1.605s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit/share/colcon-core/packages/experiment_kit)
+[1.607s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz' for CMake module files
+[1.607s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz' for CMake config files
+[1.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz' returned '0': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_gz build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log --single-version-externally-managed install_data
+[1.608s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib'
+[1.608s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/bin'
+[1.608s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/pkgconfig/hexapod_gz.pc'
+[1.608s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages'
+[1.609s] Level 1:colcon.colcon_core.shell:create_environment_hook('hexapod_gz', 'pythonpath')
+[1.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/hook/pythonpath.ps1'
+[1.609s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/hook/pythonpath.dsv'
+[1.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/hook/pythonpath.sh'
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/bin'
+[1.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hexapod_gz)
+[1.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/package.ps1'
+[1.611s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/package.dsv'
+[1.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/package.sh'
+[1.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/package.bash'
+[1.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/hexapod_gz/package.zsh'
+[1.612s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/share/colcon-core/packages/hexapod_gz)
+[1.612s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.612s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.612s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.612s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.622s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.622s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.622s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.637s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.637s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/local_setup.ps1'
+[1.638s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ambushee/HexapodLeg_modeling_team/2dof/install/_local_setup_util_ps1.py'
+[1.639s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/setup.ps1'
+[1.639s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/local_setup.sh'
+[1.640s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ambushee/HexapodLeg_modeling_team/2dof/install/_local_setup_util_sh.py'
+[1.640s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/setup.sh'
+[1.641s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/local_setup.bash'
+[1.641s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/setup.bash'
+[1.642s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/local_setup.zsh'
+[1.643s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ambushee/HexapodLeg_modeling_team/2dof/install/setup.zsh'

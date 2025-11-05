@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cybergear_interfaces/msg/MotorControl.msg
+// generated code does not contain a copyright notice
+
+#include "cybergear_interfaces/msg/SetPoint.idl"
+
+module cybergear_interfaces {
+  module msg {
+    struct MotorControl {
+      @verbatim (language="comment", text=
+        "หมายเลขมอเตอร์ที่ต้องการควบคุม")
+      int8 motor_id;
+
+      @verbatim (language="comment", text=
+        "โหมดการควบคุม (0: operation, 1: current, 2: speed, 3: position)")
+      uint8 control_mode;
+
+      cybergear_interfaces::msg::SetPoint set_point;
+    };
+  };
+};

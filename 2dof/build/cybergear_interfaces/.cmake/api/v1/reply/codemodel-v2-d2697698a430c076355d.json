@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0088487428e661982ded.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "cybergear_interfaces__py",
+					"jsonFile" : "directory-cybergear_interfaces__py-ca6fb28db340784fef86.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces/cybergear_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "cybergear_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_cybergear_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_cybergear_interfaces_egg-f6fb8b6e4cde58bcc09a.json",
+					"name" : "ament_cmake_python_build_cybergear_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_cybergear_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_cybergear_interfaces-5c76b470e8b52c5f0591.json",
+					"name" : "ament_cmake_python_copy_cybergear_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces-efd19ea2bbe83c9b83ae.json",
+					"name" : "cybergear_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__cpp-35235d5164511222b07a.json",
+					"name" : "cybergear_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cybergear_interfaces__py::@f5ef0b6a7773e53cfc3c",
+					"jsonFile" : "target-cybergear_interfaces__py-41f77f49fee2036a0d22.json",
+					"name" : "cybergear_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_generator_c-3659cf0cc5aedf6da022.json",
+					"name" : "cybergear_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_generator_py-a52c2c5a12b1cadc0f4b.json",
+					"name" : "cybergear_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_c-5623bcf07e922afba618.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_c__pyext-eaec4aa65512e97b8b5c.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_cpp-8ac0e5bce9dbb95f692f.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_fastrtps_c-7d440facada9a3f48f74.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_fastrtps_c__pyext-51d5abd50b506630c6fa.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_fastrtps_cpp-45e729f5910019d9e6a7.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_introspection_c-49f15a671d8918b7a12d.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_introspection_c__pyext-3364cd66ba46af57ad97.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces__rosidl_typesupport_introspection_cpp-e19a6b8a29eb87f2cbf4.json",
+					"name" : "cybergear_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cybergear_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cybergear_interfaces_uninstall-568cddb968dc1cf95a96.json",
+					"name" : "cybergear_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f46356003b4bd43cf382.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces",
+		"source" : "/home/ambushee/HexapodLeg_modeling_team/2dof/src/cybergear_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

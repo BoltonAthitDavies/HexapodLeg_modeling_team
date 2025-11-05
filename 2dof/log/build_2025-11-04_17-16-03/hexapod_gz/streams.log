@@ -1,0 +1,22 @@
+[1.129s] Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_gz build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log --single-version-externally-managed install_data
+[1.448s] running egg_info
+[1.449s] writing ../../build/hexapod_gz/hexapod_gz.egg-info/PKG-INFO
+[1.449s] writing dependency_links to ../../build/hexapod_gz/hexapod_gz.egg-info/dependency_links.txt
+[1.449s] writing entry points to ../../build/hexapod_gz/hexapod_gz.egg-info/entry_points.txt
+[1.449s] writing requirements to ../../build/hexapod_gz/hexapod_gz.egg-info/requires.txt
+[1.449s] writing top-level names to ../../build/hexapod_gz/hexapod_gz.egg-info/top_level.txt
+[1.451s] reading manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+[1.452s] writing manifest file '../../build/hexapod_gz/hexapod_gz.egg-info/SOURCES.txt'
+[1.452s] running build
+[1.452s] running build_py
+[1.453s] running install
+[1.453s] running install_lib
+[1.454s] running install_data
+[1.454s] running install_egg_info
+[1.457s] removing '/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info' (and everything under it)
+[1.457s] Copying ../../build/hexapod_gz/hexapod_gz.egg-info to /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages/hexapod_gz-0.1.0-py3.10.egg-info
+[1.458s] running install_scripts
+[1.481s] Installing pd_position_commander script to /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz
+[1.481s] Installing pd_step_commander script to /home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/hexapod_gz
+[1.481s] writing list of installed files to '/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log'
+[1.511s] Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/src/hexapod_gz' returned '0': PYTHONPATH=/home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hexapod_gz build --build-base /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/build install --record /home/ambushee/HexapodLeg_modeling_team/2dof/build/hexapod_gz/install.log --single-version-externally-managed install_data

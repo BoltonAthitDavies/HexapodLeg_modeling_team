@@ -1,0 +1,266 @@
+[0.028s] Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces -- -j16 -l16
+[0.692s] [  1%] Built target cybergear_interfaces__cpp
+[0.692s] [ 12%] Built target cybergear_interfaces__rosidl_generator_c
+[0.693s] [ 12%] Built target ament_cmake_python_copy_cybergear_interfaces
+[0.693s] [ 26%] Built target cybergear_interfaces__rosidl_typesupport_c
+[0.693s] [ 46%] Built target cybergear_interfaces__rosidl_typesupport_cpp
+[0.693s] [ 46%] Built target cybergear_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.693s] [ 57%] Built target cybergear_interfaces__rosidl_typesupport_introspection_c
+[0.693s] [ 69%] Built target cybergear_interfaces__rosidl_typesupport_introspection_cpp
+[0.693s] [ 80%] Built target cybergear_interfaces__rosidl_typesupport_fastrtps_c
+[0.693s] [ 80%] Built target cybergear_interfaces
+[0.693s] [ 81%] Built target cybergear_interfaces__py
+[0.693s] [ 91%] Built target cybergear_interfaces__rosidl_generator_py
+[0.693s] [100%] Built target cybergear_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.693s] [100%] Built target cybergear_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.693s] [100%] Built target cybergear_interfaces__rosidl_typesupport_c__pyext
+[0.693s] running egg_info
+[0.693s] writing cybergear_interfaces.egg-info/PKG-INFO
+[0.693s] writing dependency_links to cybergear_interfaces.egg-info/dependency_links.txt
+[0.693s] writing top-level names to cybergear_interfaces.egg-info/top_level.txt
+[0.694s] reading manifest file 'cybergear_interfaces.egg-info/SOURCES.txt'
+[0.694s] writing manifest file 'cybergear_interfaces.egg-info/SOURCES.txt'
+[0.694s] [100%] Built target ament_cmake_python_build_cybergear_interfaces_egg
+[0.708s] Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --build /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces -- -j16 -l16
+[0.709s] Invoking command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces
+[0.715s] -- Install configuration: ""
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/ament_index/resource_index/rosidl_interfaces/cybergear_interfaces
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/motor_control.h
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/motor_control_group.h
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/set_point.h
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__functions.c
+[0.715s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__functions.h
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__struct.h
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__struct.h
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__functions.c
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__type_support.h
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__struct.h
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__functions.h
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__functions.c
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__functions.h
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__type_support.h
+[0.716s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__type_support.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/set_motion_gain.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__type_support.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__struct.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__functions.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__struct.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__functions.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__functions.c
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__struct.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__type_support.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__functions.c
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__functions.c
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__functions.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__type_support.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/volta_operation_command.h
+[0.717s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/set_param.h
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/environment/library_path.sh
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/environment/library_path.dsv
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/libcybergear_interfaces__rosidl_generator_c.so
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__rosidl_typesupport_fastrtps_c.h
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__rosidl_typesupport_fastrtps_c.h
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__rosidl_typesupport_fastrtps_c.h
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__rosidl_typesupport_fastrtps_c.h
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__rosidl_typesupport_fastrtps_c.h
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__rosidl_typesupport_fastrtps_c.h
+[0.718s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/libcybergear_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__rosidl_typesupport_introspection_c.h
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__type_support.c
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__type_support.c
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__type_support.c
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__rosidl_typesupport_introspection_c.h
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__rosidl_typesupport_introspection_c.h
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__rosidl_typesupport_introspection_c.h
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__rosidl_typesupport_introspection_c.h
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__type_support.c
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__rosidl_typesupport_introspection_c.h
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__type_support.c
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__type_support.c
+[0.719s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/libcybergear_interfaces__rosidl_typesupport_introspection_c.so
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/libcybergear_interfaces__rosidl_typesupport_c.so
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__struct.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__traits.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__builder.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__type_support.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__builder.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__struct.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__builder.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__type_support.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__traits.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__traits.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__type_support.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__struct.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/motor_control.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.720s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/set_point.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/motor_control_group.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/set_param.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__struct.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__type_support.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__struct.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__traits.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__traits.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__builder.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__builder.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__builder.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__traits.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__type_support.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__struct.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__type_support.hpp
+[0.721s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/set_motion_gain.hpp
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/volta_operation_command.hpp
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__rosidl_typesupport_fastrtps_cpp.hpp
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/dds_fastrtps
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__rosidl_typesupport_fastrtps_cpp.hpp
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__rosidl_typesupport_fastrtps_cpp.hpp
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/dds_fastrtps
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__rosidl_typesupport_fastrtps_cpp.hpp
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__rosidl_typesupport_fastrtps_cpp.hpp
+[0.722s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__rosidl_typesupport_fastrtps_cpp.hpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/libcybergear_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__type_support.cpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__rosidl_typesupport_introspection_cpp.hpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/set_point__type_support.cpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__rosidl_typesupport_introspection_cpp.hpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control__rosidl_typesupport_introspection_cpp.hpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/msg/detail/motor_control_group__type_support.cpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__rosidl_typesupport_introspection_cpp.hpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__type_support.cpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__type_support.cpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/volta_operation_command__type_support.cpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_motion_gain__rosidl_typesupport_introspection_cpp.hpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/include/cybergear_interfaces/cybergear_interfaces/srv/detail/set_param__rosidl_typesupport_introspection_cpp.hpp
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/libcybergear_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/libcybergear_interfaces__rosidl_typesupport_cpp.so
+[0.723s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/environment/pythonpath.sh
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/environment/pythonpath.dsv
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces-0.0.0-py3.10.egg-info
+[0.724s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.724s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.724s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.724s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/cybergear_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/_cybergear_interfaces_s.ep.rosidl_typesupport_c.c
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/_cybergear_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/__init__.py
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/cybergear_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/_cybergear_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg/_motor_control.py
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg/_set_point.py
+[0.724s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg/_motor_control_group_s.c
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg/_set_point_s.c
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg/_motor_control_s.c
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg/__init__.py
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg/_motor_control_group.py
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv/_set_motion_gain_s.c
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv/_volta_operation_command.py
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv/_set_param.py
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv/_set_motion_gain.py
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv/__init__.py
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv/_volta_operation_command_s.c
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv/_set_param_s.c
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/libcybergear_interfaces__rosidl_generator_py.so
+[0.725s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/cybergear_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.751s] Listing '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces'...
+[0.751s] Listing '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/msg'...
+[0.751s] Listing '/home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/srv'...
+[0.756s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/cybergear_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.757s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/cybergear_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.757s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/local/lib/python3.10/dist-packages/cybergear_interfaces/cybergear_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.757s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/lib/libcybergear_interfaces__rosidl_generator_py.so
+[0.757s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/msg/MotorControl.idl
+[0.757s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/msg/MotorControlGroup.idl
+[0.758s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/msg/SetPoint.idl
+[0.758s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/SetParam.idl
+[0.758s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/SetMotionGain.idl
+[0.758s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/VoltaOperationCommand.idl
+[0.759s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/msg/MotorControl.msg
+[0.759s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/msg/MotorControlGroup.msg
+[0.759s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/msg/SetPoint.msg
+[0.759s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/SetParam.srv
+[0.759s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/SetParam_Request.msg
+[0.759s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/SetParam_Response.msg
+[0.759s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/SetMotionGain.srv
+[0.759s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/SetMotionGain_Request.msg
+[0.760s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/SetMotionGain_Response.msg
+[0.760s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/VoltaOperationCommand.srv
+[0.760s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/VoltaOperationCommand_Request.msg
+[0.760s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/srv/VoltaOperationCommand_Response.msg
+[0.760s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/ament_index/resource_index/package_run_dependencies/cybergear_interfaces
+[0.760s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/ament_index/resource_index/parent_prefix_path/cybergear_interfaces
+[0.760s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/environment/ament_prefix_path.sh
+[0.760s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/environment/ament_prefix_path.dsv
+[0.761s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/environment/path.sh
+[0.761s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/environment/path.dsv
+[0.761s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/local_setup.bash
+[0.761s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/local_setup.sh
+[0.762s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/local_setup.zsh
+[0.762s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/local_setup.dsv
+[0.762s] -- Installing: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.dsv
+[0.763s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/ament_index/resource_index/packages/cybergear_interfaces
+[0.763s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_generator_cExport.cmake
+[0.763s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.763s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.763s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.763s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.764s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.764s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfaces__rosidl_typesupport_cExport.cmake
+[0.764s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.764s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_generator_cppExport.cmake
+[0.764s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.764s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.764s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.764s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.765s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfaces__rosidl_typesupport_cppExport.cmake
+[0.765s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.765s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_generator_pyExport.cmake
+[0.765s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/export_cybergear_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.765s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.765s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.766s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.766s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.766s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.766s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.766s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.766s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfacesConfig.cmake
+[0.766s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/cmake/cybergear_interfacesConfig-version.cmake
+[0.767s] -- Up-to-date: /home/ambushee/HexapodLeg_modeling_team/2dof/install/cybergear_interfaces/share/cybergear_interfaces/package.xml
+[0.784s] Invoked command in '/home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ambushee/HexapodLeg_modeling_team/2dof/install/hexapod_gz:/home/ambushee/HexapodLeg_modeling_team/2dof/install/experiment_kit:/opt/ros/humble /usr/bin/cmake --install /home/ambushee/HexapodLeg_modeling_team/2dof/build/cybergear_interfaces
