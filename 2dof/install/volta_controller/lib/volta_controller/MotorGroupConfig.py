@@ -26,6 +26,7 @@ class MotorGroupConfigPublisher(Node):
         self.CreatePublisher()
         self.CreateSubscriber()
         self.CreateServiceCli()
+        self.sine_torque = 0
 
     def DefinedVariables(self)->None:
         # Dictionary to store current motor parameters
@@ -40,7 +41,7 @@ class MotorGroupConfigPublisher(Node):
 
         # Sine wave torque parameters
         self.start_time = time.time()
-        self.sine_amplitude = 1.0  # Torque amplitude in Nm
+        self.sine_amplitude = 0.5  # Torque amplitude in Nm
         self.sine_frequency = 1.0  # Frequency in Hz (1 cycle per second)
 
         # Default values for each parameter
@@ -83,12 +84,18 @@ class MotorGroupConfigPublisher(Node):
             self.setup_csv_logging()
 
     def CreatePublisher(self)->None:
-        self.publisher_ = self.create_publisher(MotorControlGroup, 
+        self.publisher_ = self.create_publisher(MotorControlGroup,
                                                 'motor_group_command', 10)
         # Publisher for joint acceleration
         self.acceleration_publisher_ = self.create_publisher(
             Float64MultiArray,
             '/joint_acceleration',
+            10
+        )
+        # ADDED: Publisher for Gazebo thin_rod simulation
+        self.gazebo_publisher_ = self.create_publisher(
+            Float64MultiArray,
+            '/thin_rod/joint_effort_controller/commands',
             10
         )
     
@@ -187,6 +194,24 @@ class MotorGroupConfigPublisher(Node):
         if self.csv_row_count % 100 == 0:
             self.csv_file.flush()
     
+    def stribeck_friction(self, velocity, v_s=0.01, f_c=0.007, f_s=0.01, v_b=0.0018):
+        """Calculate Stribeck friction based on velocity."""
+        # v_b: Viscous friction coefficient
+        # f_c: Coulomb friction
+        # f_s: Static friction
+        # v_s: Stribeck velocity
+
+        if abs(velocity) < 1e-6:
+            return f_s  # Static friction
+        else:
+            friction = f_c + (f_s - f_c) * math.exp(-(abs(velocity) / v_s) ** 2)
+            friction += v_b * velocity  # Viscous friction
+            return friction if velocity > 0 else -friction
+    
+    # def torque_setpoint(self, time_sec):
+    #     """Calculate sine wave torque setpoint based on time."""
+    #     return self.sine_amplitude * math.sin(2 * math.pi * self.sine_frequency * time_sec)
+    
     def TimerCallback(self):
         """Regularly publish the current motor parameters to the motor_group_command topic."""
 
@@ -197,10 +222,12 @@ class MotorGroupConfigPublisher(Node):
         motor_controls = []
         ind = 0
 
-        # คำนวณ sine wave torque
+        # คำนวณ torque: 3 Nm สำหรับ 5 วินาทีแรก จากนั้นหยุด
         current_time = time.time() - self.start_time
-        sine_torque = self.sine_amplitude * math.sin(2 * math.pi * self.sine_frequency * current_time)
 
+        # เก็บค่า sine_torque ไว้ใช้ใน JointStateCallback
+        # self.sine_torque = self.sine_amplitude * math.sin(2 * math.pi * self.sine_frequency * current_time)
+        self.sine_torque = 0.1
         for mid in self.valid_motor_ids:
             if mid in self.motor_params:
                 mc = MotorControl()
@@ -213,7 +240,8 @@ class MotorGroupConfigPublisher(Node):
 
                 mc.set_point.position = 0.0       # ไม่ใช้ position control
                 mc.set_point.velocity = 0.0       # ไม่ใช้ velocity setpoint
-                mc.set_point.effort = sine_torque  # ส่ง sine wave torque
+                # self.sine_torque = self.stribeck_friction(velocity)
+                mc.set_point.effort = self.sine_torque  # ส่ง sine wave torque
                 mc.set_point.kp = 0.0             # ไม่ใช้ position gain
                 mc.set_point.kd = 0.0             # ไม่ใช้ velocity gain (MIT built-in)
 
@@ -222,7 +250,7 @@ class MotorGroupConfigPublisher(Node):
                 # แสดงข้อมูลการคำนวณ
                 self.get_logger().info(
                     f"Motor {mid}: time={current_time:.3f}s, "
-                    f"sine_torque={sine_torque:.3f} Nm, "
+                    f"sine_torque={self.sine_torque:.3f} Nm, "
                     f"vel={velocity:.3f} rad/s, "
                     f"acc={acceleration:.3f} rad/s²",
                     throttle_duration_sec=0.5  # แสดงทุก 0.5 วินาที
@@ -231,6 +259,14 @@ class MotorGroupConfigPublisher(Node):
 
         msg.motor_controls = motor_controls
         self.publisher_.publish(msg)
+
+        # COMMENTED: ไม่ publish sine_torque โดยตรงอีกต่อไป
+        # เพราะจะใช้ effort จาก motor จริงที่อ่านได้จาก /joint_states แทน
+        # # ADDED: Publish to Gazebo simulation (thin_rod) with the same torque
+        # # Float64MultiArray format: [effort_joint1, effort_joint2, ...]
+        gazebo_msg = Float64MultiArray()
+        gazebo_msg.data = [self.sine_torque]  # ส่ง sine wave torque เดียวกัน
+        self.gazebo_publisher_.publish(gazebo_msg)
 
     def ReadJointStates(self, file_path):
         """
@@ -280,6 +316,26 @@ class MotorGroupConfigPublisher(Node):
         # Update time stamps
         self.last_velocity_time = self.current_velocity_time
         self.current_velocity_time = msg.header.stamp.sec + msg.header.stamp.nanosec * 1e-9
+
+        # Setup joint_states CSV logging on first message (header depends on msg.name)
+        if self.csv_logging_enabled and not hasattr(self, 'joint_csv_writer'):
+            try:
+                # Create logs directory if it wasn't created earlier
+                log_dir = os.path.expanduser('~/motor_logs')
+                os.makedirs(log_dir, exist_ok=True)
+                timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                self.joint_csv_filename = os.path.join(log_dir, f'joint_states_{timestamp}.csv')
+                self.joint_csv_file = open(self.joint_csv_filename, 'w', newline='')
+                self.joint_csv_writer = csv.writer(self.joint_csv_file)
+
+                # Build header using incoming joint names (position/velocity/effort per joint)
+                header = ['timestamp', 'time_sec']
+                for name in msg.name:
+                    header.extend([f'{name}_position', f'{name}_velocity', f'{name}_effort'])
+                self.joint_csv_writer.writerow(header)
+                self.get_logger().info(f'JointState CSV logging enabled: {self.joint_csv_filename}')
+            except Exception as e:
+                self.get_logger().error(f'Failed to open joint_states CSV file: {e}')
         
         # Create a temporary array to store new velocity values
         new_velocity = np.zeros(len(self.valid_motor_ids))
@@ -330,9 +386,43 @@ class MotorGroupConfigPublisher(Node):
                 acc_msg = Float64MultiArray()
                 acc_msg.data = self.current_acceleration.tolist()
                 self.acceleration_publisher_.publish(acc_msg)
+
+                # CHANGED: ส่ง effort จาก motor จริง (อ่านจาก /joint_states) ไปยัง thin_rod simulation
+                # แทนที่จะใช้ sine_torque ที่สร้างขึ้นใหม่
+                # gazebo_msg = Float64MultiArray()
+                # gazebo_msg.data = self.current_effort.tolist()  # ใช้ effort จาก motor จริง
+                # self.gazebo_publisher_.publish(gazebo_msg)
+
+                # Log ข้อมูลเพื่อ debug (throttled)
+                self.get_logger().info(
+                    f"Published to Gazebo: effort={self.current_effort}",
+                    throttle_duration_sec=1.0
+                )
                 
                 # Log data to CSV
                 self.log_to_csv()
+
+                # Also log raw JointState values (aligned with msg.name ordering)
+                if self.csv_logging_enabled and hasattr(self, 'joint_csv_writer'):
+                    try:
+                        current_time = time.time()
+                        time_sec = current_time - self.start_time
+                        row = [current_time, time_sec]
+                        # Ensure positions/velocity/effort arrays are long enough; use nan if missing
+                        for i, name in enumerate(msg.name):
+                            pos = msg.position[i] if i < len(msg.position) else float('nan')
+                            vel = msg.velocity[i] if i < len(msg.velocity) else float('nan')
+                            eff = msg.effort[i] if i < len(msg.effort) else float('nan')
+                            row.extend([pos, vel, eff])
+                        self.joint_csv_writer.writerow(row)
+                        # flush every 100 rows
+                        if not hasattr(self, 'joint_csv_row_count'):
+                            self.joint_csv_row_count = 0
+                        self.joint_csv_row_count += 1
+                        if self.joint_csv_row_count % 100 == 0:
+                            self.joint_csv_file.flush()
+                    except Exception as e:
+                        self.get_logger().error(f'Failed to write joint_states CSV row: {e}')
             else:
                 # If dt is too small, keep previous acceleration
                 self.get_logger().warn(
@@ -522,6 +612,13 @@ class MotorGroupConfigPublisher(Node):
         if self.csv_logging_enabled and hasattr(self, 'csv_file'):
             self.csv_file.close()
             self.get_logger().info(f'CSV file closed: {self.csv_filename}')
+        # Close joint_states CSV file if open
+        if self.csv_logging_enabled and hasattr(self, 'joint_csv_file'):
+            try:
+                self.joint_csv_file.close()
+                self.get_logger().info(f'JointState CSV file closed: {self.joint_csv_filename}')
+            except Exception:
+                pass
         super().DestroyNode()
 
 def main(args=None):
@@ -538,6 +635,13 @@ def main(args=None):
         if node.csv_logging_enabled and hasattr(node, 'csv_file'):
             node.csv_file.close()
             node.get_logger().info(f'CSV file saved: {node.csv_filename}')
+            # Close joint_states CSV file if exists
+            if node.csv_logging_enabled and hasattr(node, 'joint_csv_file'):
+                try:
+                    node.joint_csv_file.close()
+                    node.get_logger().info(f'JointState CSV file saved: {node.joint_csv_filename}')
+                except Exception:
+                    pass
         # node.DestroyNode()
         rclpy.shutdown()
 
